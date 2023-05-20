@@ -10,12 +10,12 @@ function Abhijit() {
 
 
           <div className=' md:w-[40%] mt-16 md:mt-0'>
-          <Image src="/abhijit.jpeg" width={450} height={600} />
+          <Image src="/abhijit.jpeg" width={450} height={600} alt='abhijit'/>
           </div>
             {/* IMAGE */}
 
             {/* TEXT */}
-            <div className=' px-4 md:px-16 pt-32 md:w-[60%] order-first md:order-last'>
+            <div className=' px-4 md:px-16 pt-16 md:w-[60%] order-first md:order-last'>
                 {/* HEADER TEXT */}
                 <h1 className=' font-semibold  text-2xl' >Captain Abhijitt Adsul Ji</h1>
                 {/* HEADER TEXT */}

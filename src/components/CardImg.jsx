@@ -1,21 +1,21 @@
 import Image from 'next/image'
 import React from 'react'
 
-function Card(props) {
+function CardImg(props) {
     return (
         <div>
-            <div class="max-w-sm rounded overflow-hidden shadow-lg h-[110%]">
-                <Image class="w-full" src={`/${props.img}.jpeg`}  width={400} height={600} alt={props.alt}/>
-                <div class="px-6 py-4">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+                <Image class="w-full" src={`/${props.img}.jpeg`} alt={props.alt} width={400} height={600}/>
+                {/* <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{props.title}</div>
                     <p class="text-gray-700 text-base">
                   {props.text}
                     </p>
-                </div>
+                </div> */}
 
-                    <div className=' mt-4 flex justify-end px-10 '>
+                    {/* <div className=' mt-4 flex justify-end px-10 '>
                         <a  href={props.link} className=' cursor-pointer bg-blue-700 text-white px-4 py-2 rounded-md' >Read More</a>
-                    </div>
+                    </div> */}
 
 
                 {/* <div class="px-6 pt-4 pb-2">
@@ -30,4 +30,4 @@ function Card(props) {
     )
 }
 
-export default Card
+export default CardImg

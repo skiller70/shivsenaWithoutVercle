@@ -4,7 +4,7 @@ function AnandRao() {
     return (
         <div className='flex px-4 md:px-8 lg:px-16 md:flex-row flex-col'>
             {/* TEXT    */}
-            <div className='md:w-[50%] mx-4 md:mx-0 flex flex-col  justify-center'>
+            <div className='md:w-[50%] mx-4 md:mx-0 flex flex-col pt-12 justify-center'>
                 {/* HEADING */}
                 <div className=' text-2xl font-semibold'>Anandrao Vithoba Adsul
                 </div>
@@ -16,7 +16,7 @@ function AnandRao() {
             {/* TEXT    */}
             {/* IMAGE */}
             <div className='md:w-[50%] mt-8 md:mt-0 flex justify-center items-center'>
-            <Image src="/anandrao.jpg" width={500} height={400}   />
+            <Image src="/anandrao.jpg" width={500} height={400} alt='anandrao'  />
             </div>
             {/* IMAGE */}
 

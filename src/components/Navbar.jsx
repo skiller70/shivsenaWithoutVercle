@@ -46,7 +46,7 @@ function Navbar() {
 
                     <div className='flex text-white gap-3 lg:gap-x-4  items-center' >
 
-                        <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md'href="/contact">Join Shivsena</Link>
+                        <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Join Shivsena</Link>
                         <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link>
                     </div>
 
@@ -66,11 +66,11 @@ function Navbar() {
             </div>
 
 
-            <div className={`bg-[#FF7F50] w-full h-56 sticky top-20  shadow-lg  z-50 text-white ${toggle ? "visible" : "hidden"}`}
+            <div className={`bg-[#FF7F50] w-[100%] h-56 sticky top-20  shadow-lg  z-50 text-white ${toggle ? "visible" : "hidden"}`}
             >
                 <div className=' pt-6'>
 
-                    <div className=' flex w-full justify-center flex-col  mx-32 gap-y-4'  >
+                    <div className=' flex  justify-center flex-col  mx-32 gap-y-4'  >
                         <Link className='  ' href="/">Home</Link>
                         <Link className='   ' href="/">Our Story</Link>
                         <Link className='  ' href="/">Media</Link>

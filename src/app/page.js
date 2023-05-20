@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -20,15 +21,17 @@ export default function Home() {
       {/* <div className=' mt-16'>
         <Anand />
         </div> */}
-      <div className='  mt-4 md:mt-12 '>
-        <Image src="/eknath.jpg" width={1920} height={1080} alt='eknath' />
-      </div>
+ 
+      <div  className=' relative mt-4 md:mt-12   '>
+        <Link href="/eknath" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
+       <Image src="/eknath.jpg" width={1920} height={1080} alt='eknath'/>
+       </div>
 
-
-
-      <div className='  mt-4 md:mt-12 '>
-        <Image src="/anandrao.jpg" width={1920} height={1080} alt='anandrao' />
-      </div>
+    
+      <div  className=' relative mt-4 md:mt-12   '>
+        <Link href="/anandrao" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
+       <Image src="/anandrao.jpg" width={1920} height={1080} alt='anandrao'/>
+       </div>
 
       <div className='mt-4 md:mt-12' >
         <AnandRao />

@@ -66,7 +66,7 @@ function Navbar() {
             </div>
 
 
-            <div className={`bg-[#FF7F50] w-full h-56 sticky top-20  shadow-lg  text-white ${toggle ? "visible" : "hidden"}`}
+            <div className={`bg-[#FF7F50] w-full h-56 sticky top-20  shadow-lg  z-50 text-white ${toggle ? "visible" : "hidden"}`}
             >
                 <div className=' pt-6'>
 

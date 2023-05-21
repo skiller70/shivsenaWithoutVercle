@@ -1,5 +1,4 @@
 import Abhijit from '@/components/Abhijit'
-import Anand from '@/components/Anand'
 import AnandRao from '@/components/AnandRao'
 import Card from '@/components/Card'
 import CardImg from '@/components/CardImg'

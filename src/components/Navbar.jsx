@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
 
-function Navbar() {
+function Navbar(props) {
 
 
     // STATE
@@ -36,19 +36,28 @@ function Navbar() {
                 {/* NAV LOGO */}
                 {/* NAV LINK */}
                 <div className=' hidden  md:flex text-white flex-1  items-center    '>
-                    <div className='mx-[4%]lg:mx-[8%] flex gap-x-2 lg:gap-x-8 flex-1 w-full justify-center'  >
+                    {props.isAdmin ? <div className='mx-[4%]lg:mx-[8%] flex gap-x-2 lg:gap-x-8 flex-1 w-full justify-center'  >
+                        <Link className=' hover:border-b-4  ' href="/dashboard">Dashboard</Link>
+                        {/* <Link className=' hover:border-b-4  ' href="/">Our Story</Link>
+                        <Link className=' hover:border-b-4  ' href="/media">Media</Link> */}
+
+                    </div> : <div className='mx-[4%]lg:mx-[8%] flex gap-x-2 lg:gap-x-8 flex-1 w-full justify-center'  >
                         <Link className=' hover:border-b-4  ' href="/">Home</Link>
                         <Link className=' hover:border-b-4  ' href="/">Our Story</Link>
-                        <Link className=' hover:border-b-4  ' href="/">Media</Link>
+                        <Link className=' hover:border-b-4  ' href="/media">Media</Link>
 
-                    </div>
+                    </div>}
 
 
-                    <div className='flex text-white gap-3 lg:gap-x-4  items-center' >
+                    {props.isAdmin ? <div className='flex text-white gap-3 lg:gap-x-4  items-center' >
+
+                        <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Logout</Link>
+                        {/* <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link> */}
+                    </div> : <div className='flex text-white gap-3 lg:gap-x-4  items-center' >
 
                         <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Join Shivsena</Link>
                         <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link>
-                    </div>
+                    </div>}
 
 
 
@@ -70,19 +79,29 @@ function Navbar() {
             >
                 <div className=' pt-6'>
 
-                    <div className=' flex  justify-center flex-col  mx-32 gap-y-4'  >
-                        <Link className='  ' href="/">Home</Link>
-                        <Link className='   ' href="/">Our Story</Link>
-                        <Link className='  ' href="/">Media</Link>
+                    {props.isAdmin?<div className=' flex  justify-center flex-col  mx-32 gap-y-4'  >
+                        <Link className='  ' href="/">Dashboard</Link>
+                        {/* <Link className='   ' href="/">Our Story</Link>
+                        <Link className='  ' href="/">Media</Link> */}
 
                     </div>
+:<div className=' flex  justify-center flex-col  mx-32 gap-y-4'  >
+<Link className='  ' href="/">Home</Link>
+<Link className='   ' href="/">Our Story</Link>
+<Link className='  ' href="/">Media</Link>
 
+</div>
+}
 
-                    <div className='flex items-center flex-row gap-x-4 mt-8  justify-center' >
+                    {props.isAdmin ? <div className='flex items-center flex-row gap-x-4 mt-8  justify-center' >
+
+                        <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Logout</Link>
+                        {/* <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link> */}
+                    </div> : <div className='flex items-center flex-row gap-x-4 mt-8  justify-center' >
 
                         <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Join Shivsena</Link>
                         <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link>
-                    </div>
+                    </div>}
                 </div>
 
 

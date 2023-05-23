@@ -1,10 +1,16 @@
+
+
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Story from '@/components/Story'
-import Image from 'next/image'
-import React from 'react'
+
+
 
 function page() {
+
+
+
+
     return (
         <div>
             <Navbar />

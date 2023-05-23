@@ -16,7 +16,7 @@ function Story(props) {
                 {/* TEXT */}
                 {/* IMAGE */}
                 <div className='lg:w-[40%] w-[100%] mt-8 lg:mt-0 self-center    '>
-                    <Image src="/hero.png" width={500} height={600} />
+                    <Image src="/hero.png" width={500} height={600} alt='hero1' />
 
                 </div>
                 {/* IMAGE */}

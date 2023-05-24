@@ -38,8 +38,8 @@ function Navbar(props) {
                 <div className=' hidden  md:flex text-white flex-1  items-center    '>
                     {props.isAdmin ? <div className='mx-[4%]lg:mx-[8%] flex gap-x-2 lg:gap-x-8 flex-1 w-full justify-center'  >
                         <Link className=' hover:border-b-4  ' href="/dashboard">Dashboard</Link>
-                        {/* <Link className=' hover:border-b-4  ' href="/">Our Story</Link>
-                        <Link className=' hover:border-b-4  ' href="/media">Media</Link> */}
+                        {/* <Link className=' hover:border-b-4  ' href="/">Our Story</Link>*/}
+                        <Link className=' hover:border-b-4  ' href="/media">Media</Link> 
 
                     </div> : <div className='mx-[4%]lg:mx-[8%] flex gap-x-2 lg:gap-x-8 flex-1 w-full justify-center'  >
                         <Link className=' hover:border-b-4  ' href="/">Home</Link>

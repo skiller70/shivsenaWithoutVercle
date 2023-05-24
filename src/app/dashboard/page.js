@@ -10,13 +10,13 @@ function pages() {
      <Link href="/createmedia" className='flex justify-center bg-blue-500 text-white px-4 py-2 rounded-sm'>
         Create Media
       </Link>
-      <Link href="/updatemedia" className=' flex justify-center bg-blue-500 text-white px-4 py-2 rounded-sm'>
+      {/* <Link href="/updatemedia/123" className=' flex justify-center bg-blue-500 text-white px-4 py-2 rounded-sm'>
         Update Media
-      </Link>
+      </Link> */}
 
-      <Link href="/deletemedia" className='flex justify-center bg-red-500 text-white px-4 py-2 rounded-sm'>
+      {/* <Link href="/deletemedia" className='flex justify-center bg-red-500 text-white px-4 py-2 rounded-sm'>
         Delete Media
-      </Link>
+      </Link> */}
 
      </div>
 

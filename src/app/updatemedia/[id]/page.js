@@ -1,56 +1,113 @@
 "use client"
-import Navbar from "@/components/Navbar";
-import axios from "axios";
-import React, { useState } from "react";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Card from '@/components/Card'
+import Navbar from '@/components/Navbar'
+import { useRouter, useParams } from 'next/navigation'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 
-function page() {
-  //STATE
 
+function page({ paramas }) {
+  const params = useParams();
+  const id = params.id;
+  // HOOK
+  const router = useRouter()
+
+  // HOOK
+  console.log(id)
+  // STATE
+  const [allMedia, setAllMedia] = useState([])
   const [selectedFile, setSelectedFile] = useState(null);
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
 
 
-  //STATE
 
-  //METHODS
-  const notifySuccess = () => toast.success("media upload successfully");
-  const notifyError = () => toast.error("faild to upload media");
 
+  // STATE
+  useEffect(() => {
+    fetchMedia()
+  }, [])
+
+
+
+
+  // METHODS
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
   };
 
-  const handleUpload = async(e) => {
+
+
+
+  const fetchMedia = async () => {
+
+    try {
+      const result = await axios.get(`http://localhost:4000/getsinglemedia/${id}`)
+      console.log(result.data)
+      if (result.status == 200) {
+        setTitle([...title, result.data.title])
+        setText([...text, result.data.text])
+
+
+      } else {
+        console.log("something went wrong")
+      }
+    } catch (error) {
+      if (error) {
+        console.log("failed to fetch media")
+      }
+    }
+
+
+  }
+
+  //UPDATE DATA
+
+  const handleUpload = async (e) => {
     e.preventDefault()
     const data = new FormData();
     data.append("media", selectedFile);
     data.append("title", title);
     data.append("text", text);
-   
-  
-  try {
-    const result = await axios.post("http://localhost:4000/createmedia",data)
-   if(result.status == 200){
-    notifySuccess()
-    setText("")
-    setTitle("")
-    setSelectedFile(null)
-   }
-   
-  } catch (error) {
-    notifyError()
-  }
+    data.append("id", id);
+
+
+    try {
+      const result = await axios.post("http://localhost:4000/updatemedia", data)
+      if (result.status == 200) {
+        // notifySuccess()
+
+        setSelectedFile(null)
+      }
+
+    } catch (error) {
+      // notifyError()
+    }
   };
 
-  //METHODS
+  //UPDATE DATA
+  // METHODS
+
+
 
   return (
-    <div className=" ">
-            <Navbar isAdmin={true}/>
-            <ToastContainer/>
+    <div>
+      <Navbar isAdmin={true} />
+
+      {/* <div className=' p-10 grid grid-cols-1 gap-6  md:grid-cols-3  lg:grid-cols-4'>
+
+        {allMedia.map((item) => (
+          <div id={item.title}>
+            <Card img={item.filename} title={item.title} text={item.text} />
+
+          </div>
+        ))}
+
+
+
+
+      </div> */}
+
       <form className="w-full  px-20 py-16 flex   flex-col justify-center">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -68,17 +125,17 @@ function page() {
               className=" border-gray-500 appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               id="grid-first-name"
               type="text"
-            
+
             />
           </div>
-        
+
 
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="grid-first-name"
             >
-             Text
+              Text
             </label>
             <input
               value={text}
@@ -88,7 +145,7 @@ function page() {
               className="border-gray-500  appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               id="grid-first-name"
               type="text"
-            
+
             />
           </div>
 
@@ -112,14 +169,24 @@ function page() {
             <div>
               {" "}
               <button onClick={handleUpload} className="bg-blue-500  px-2 py-1 mr-3  text-white shadow-md rounded-sm ">
-                Create Media
+                Update Media
               </button>
             </div>
           </div>
         </div>
       </form>
+
+
+
+
+
+
+
+
+
+
     </div>
-  );
+  )
 }
 
-export default page;
+export default page

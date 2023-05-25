@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
-const adminLogin = localStorage.getItem("token")
+
 function Navbar(props) {
 const router = useRouter()
 
@@ -66,7 +66,7 @@ const router = useRouter()
                     </div> : <div className='flex text-white gap-3 lg:gap-x-4  items-center' >
 
                         <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Join Shivsena</Link>
-                        <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link>
+                        <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/donation">Make a Donation</Link>
                     </div>}
 
 
@@ -110,7 +110,7 @@ const router = useRouter()
                     </div> : <div className='flex items-center flex-row gap-x-4 mt-8  justify-center' >
 
                         <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Join Shivsena</Link>
-                        <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link>
+                        <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/donation">Make a Donation</Link>
                     </div>}
                 </div>
 

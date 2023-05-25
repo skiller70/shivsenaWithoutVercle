@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
+import Spinner from './Spinner';
 function Form() {
   // HOOK
   const {
@@ -19,7 +20,10 @@ function Form() {
 
   // HOOK
   // STATE
+  const [isLoading, setIsLoading] = useState(false)
+
   const [name, setName] = useState("")
+
   // STATE
   // METHODS
   const notifySuccess = () => toast.success("Thank you for getting in touch");
@@ -27,27 +31,30 @@ function Form() {
   const submitForm = async (data) => {
 
 
-try {
-  
-  const result = await axios.post("http://localhost:4000/mail", data)
+    try {
+      setIsLoading(true)
+      const result = await axios.post("http://localhost:4000/mail", data)
 
-  if (result.status == 200) {
-    notifySuccess()
-    reset()
-  } else {
-    notifyError()
-  }
-} catch (error) {
-  if(error){
-    notifyError()
-  }
-}
+      if (result.status == 200) {
+        notifySuccess()
+        reset()
+        setIsLoading(false)
+      } else {
+        notifyError()
+        setIsLoading(false)
+      }
+    } catch (error) {
+      if (error) {
+        notifyError()
+        setIsLoading(false)
+      }
+    }
 
 
 
 
 
-   
+
 
   }
 
@@ -62,6 +69,8 @@ try {
 
   return (
     <>
+
+      {isLoading ? <Spinner /> : null}
       <ToastContainer />
       <div className=' w-full bg-white flex justify-center items-center flex-col pt-10 pb-20'>
         <h1 className='text-3xl my-12 text-center'>Get IN Touch With US !</h1>

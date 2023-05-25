@@ -23,9 +23,13 @@ if(isAdmin !== null){
   return (
     <div className=' h-screen'><Navbar isAdmin={true}/>
       <div className='p-10 '>
-     <div  className=' md:w-[50%] h-full flex md:flex-row flex-col justify-between gap-y-8 md:gap-y-0'>
-     <Link href="/createmedia" className='flex justify-center bg-blue-500 text-white px-4 py-2 rounded-sm'>
+     <div  className=' md:w-[15%] h-full flex  flex-col justify-between gap-y-8 md:gap-y-4'>
+     <Link href="/createmedia" className='flex justify-center bg-[#ffa500] rounded-md text-white px-4 py-2 '>
         Create Media
+      </Link>
+
+         <Link href="/createmedia" className='flex justify-center bg-[#ffa500] rounded-md text-white px-4 py-2 '>
+        Get Leads
       </Link>
       {/* <Link href="/updatemedia/123" className=' flex justify-center bg-blue-500 text-white px-4 py-2 rounded-sm'>
         Update Media

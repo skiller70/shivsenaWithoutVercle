@@ -4,6 +4,8 @@ import Navbar from '@/components/Navbar'
 import { useRouter, useParams } from 'next/navigation'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function page({ paramas }) {
@@ -32,6 +34,11 @@ function page({ paramas }) {
 
 
   // METHODS
+
+  const notifySuccess = () => toast.success("media update successfully");
+  const notifyError = () => toast.error("failed to update media");
+
+
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
   };
@@ -75,13 +82,13 @@ function page({ paramas }) {
     try {
       const result = await axios.post("http://localhost:4000/updatemedia", data)
       if (result.status == 200) {
-        // notifySuccess()
+        notifySuccess()
 
         setSelectedFile(null)
       }
 
     } catch (error) {
-      // notifyError()
+       notifyError()
     }
   };
 
@@ -93,7 +100,7 @@ function page({ paramas }) {
   return (
     <div>
       <Navbar isAdmin={true} />
-
+      <ToastContainer />
       {/* <div className=' p-10 grid grid-cols-1 gap-6  md:grid-cols-3  lg:grid-cols-4'>
 
         {allMedia.map((item) => (

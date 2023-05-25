@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPenToSquare,faTrash} from "@fortawesome/free-solid-svg-icons"
 import Link from 'next/link'
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Card(props) {
     const {img,title,text,link,id} = props;
   
@@ -12,12 +14,22 @@ function Card(props) {
 
 
     // METHODS
+    const notifySuccess = () => toast.success("media deleted successfully");
+    const notifyError = () => toast.error("failed to delete media");
     const deleteCard = async()=>{
-     const result = await axios.post("http://localhost:4000/deletemedia",{id})
+    try {
+        const result = await axios.post("http://localhost:4000/deletemedia",{id})
+        if(result.status == 200){
+            notifySuccess()
+        }
+    } catch (error) {
+        notifyError()
+    }
     }
     // METHODS
     return (
         <div>
+            <ToastContainer/>
             <div className="max-w-sm rounded overflow-hidden shadow-lg h-[110%] pb-4">
                 <Image className="w-full" src={`/${props.img}`}  width={400} height={600} alt={props.alt}/>
                 <div className="px-6 py-4">

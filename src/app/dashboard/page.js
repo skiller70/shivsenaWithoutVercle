@@ -1,8 +1,25 @@
+"use client"
 import Navbar from '@/components/Navbar'
 import Link from 'next/link'
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+const isAdmin = localStorage.getItem("token")
 function pages() {
+  const router =  useRouter()
+
+useEffect(()=>{
+if(isAdmin !== null){
+ 
+  router.push("/dashboard")
+}else{
+  router.push("/")
+}
+
+
+},[])
+
+
+
   return (
     <div className=' h-screen'><Navbar isAdmin={true}/>
       <div className='p-10 '>

@@ -1,14 +1,24 @@
 "use client";
 
 import React, { useState } from 'react'
+import { useRouter } from 'next/navigation';
 import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
-
+const adminLogin = localStorage.getItem("token")
 function Navbar(props) {
+const router = useRouter()
+
+    // METHODS 
+
+    const userLogout = () =>{
+        localStorage.removeItem("token")
+        router.push("/login")
+    }
 
 
+    // METHODS 
     // STATE
     const [toggle, setToggle] = useState(false)
     // STATE
@@ -51,7 +61,7 @@ function Navbar(props) {
 
                     {props.isAdmin ? <div className='flex text-white gap-3 lg:gap-x-4  items-center' >
 
-                        <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Logout</Link>
+                        <button onClick={userLogout} className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' >Logout</button>
                         {/* <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link> */}
                     </div> : <div className='flex text-white gap-3 lg:gap-x-4  items-center' >
 
@@ -94,8 +104,8 @@ function Navbar(props) {
 }
 
                     {props.isAdmin ? <div className='flex items-center flex-row gap-x-4 mt-8  justify-center' >
-
-                        <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Logout</Link>
+                    
+                        <button className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md'  onClick={userLogout}>Logout</button>
                         {/* <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link> */}
                     </div> : <div className='flex items-center flex-row gap-x-4 mt-8  justify-center' >
 

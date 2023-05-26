@@ -8,19 +8,19 @@ import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 
 
 export default function Home() {
 
+useEffect(()=>{
+  const admin = localStorage.getItem("token")
+  setIsAdmin(admin)
+},)
 
 
-  if (typeof window !== 'undefined') {
-    // Perform localStorage action
-    const isAdmin = localStorage.getItem("token")
-  }
-
-
+const [isAdmin,setIsAdmin] = useState("")
 
 
   return (

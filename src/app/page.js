@@ -17,7 +17,7 @@ export default function Home() {
 useEffect(()=>{
   const admin = localStorage.getItem("token")
   setIsAdminLogin(admin)
-},)
+},[])
 
 
 const [isAdminLogin,setIsAdminLogin] = useState(null)

@@ -20,7 +20,7 @@ useEffect(()=>{
 },)
 
 
-const [isAdmin,setIsAdmin] = useState("")
+const [isAdmin,setIsAdmin] = useState(null)
 
 
   return (

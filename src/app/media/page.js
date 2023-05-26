@@ -10,12 +10,14 @@ import axios from 'axios'
 function Page() {
 // STATE
 const [allData,setAllData] = useState([])
-const isAdmin = localStorage.getItem("token")
+const [isAdmin,setIsAdmin] = useState(null)
 // STATE
 
 
 // LIFE CYCLE
 useEffect(()=>{
+  const token = localStorage.getItem("token")
+  setIsAdmin(token)
   fetchMedias()
 },[])
 

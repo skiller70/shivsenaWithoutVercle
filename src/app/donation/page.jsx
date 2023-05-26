@@ -17,16 +17,15 @@ function Page() {
         setError,
         formState: { errors },
     } = useForm();
-
-
-
     // HOOK
+
     // STATE
     const [isLoading, setIsLoading] = useState(false)
 
-    const [name, setName] = useState("")
+
 
     // STATE
+
     // METHODS
     const notifySuccess = () => toast.success("Thank you for getting in touch");
     const notifyError = () => toast.error("There was an error trying to send your message.Please try again later.");
@@ -35,7 +34,7 @@ function Page() {
 
         try {
             setIsLoading(true)
-            const result = await axios.post("http://localhost:4000/mail", data)
+            const result = await axios.post("http://localhost:4000/donation", data)
 
             if (result.status == 200) {
                 notifySuccess()
@@ -144,27 +143,47 @@ function Page() {
 
                         </div>
                     </div>
+                    <div className="flex flex-wrap -mx-3 mb-6">
+                        <div className="w-full px-3">
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
+                                Amount
+                            </label>
+                            <input
+                                {...register("amount", {
+                                    required: "Phone Number is required",
+                                    pattern: {
+                                        value: /^[0-9]+$/,
+                                        message: "Please enter number only",
+                                    },
+                                })}
 
-                                {console.log(errors.donationType)}
+
+                                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" />
+                            <p className="text-red-500 text-xs italic mt-3">{errors.amount && errors.amount.message}</p>
+
+
+                        </div>
+                    </div>
+                    
                     <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full px-3">
                             <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
                             <select
                                 {...register("donationType", {
                                     required: "select one option"
-                                    })}
-                              
+                                })}
 
-                                id="countries" className={`bg-gray-50 border  ${errors.donationType && errors.donationType.message?"border-red-500":"border-gray-300"}    border-gray-300 text-gray-900 text-sm rounded-lg  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500`}>
+
+                                id="countries" className={`bg-gray-50 border  ${errors.donationType && errors.donationType.message ? "border-red-500" : "border-gray-300"}    border-gray-300 text-gray-900 text-sm rounded-lg  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500`}>
                                 <option value="" ></option>
-                                <option value="US">PRESIDENT</option>
-                                <option value="CA">PM</option>
-                                <option value="FR">CM</option>
-                                <option value="DE">MLA</option>
+                                <option value="president">PRESIDENT</option>
+                                <option value="pm">PM</option>
+                                <option value="cm">CM</option>
+                                <option value="mla">MLA</option>
                             </select>
                             <p className="text-red-500 text-xs italic mt-3">{errors.donationType && errors.donationType.message}</p>
                         </div>
-
+                  
 
                         <div className='mt-8 flex justify-end items-end w-full pr-4 '>
                             <button onClick={handleSubmit(submitForm)} className='bg-[#ffa500]  px-4 py-2 rounded-md text-white tracking-wide'>SUBMIT</button>

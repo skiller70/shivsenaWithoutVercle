@@ -18,7 +18,7 @@ function page() {
     // METHODS 
     const fetchLeads = async () => {
 
-        const result = await axios.get("http://localhost:4000/getleads")
+        const result = await axios.get("http://localhost:4000/getsuccessdonation")
 
         if (result.status == 200) {
             setLeads(result.data)
@@ -40,10 +40,12 @@ function page() {
                 <table className='  w-full border-2 border-slate-400 ' >
                     <thead className='mt-8 py-8'>
                         <tr className=' border-b-2 border-slate-400'>
-                            <th>About</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Phone</th>
+                            <th>Number</th>
+                            <th>amount</th>
+                            <th>Donation Type</th>
+                          
 
                         </tr>
                     </thead>
@@ -53,10 +55,11 @@ function page() {
 
 
                             <tr key={item._id} className=' border-b-2    border-slate-400 '>
-                                <td className='text-center  '>{item.about}</td>
                                 <td className='text-center  '>{item.name}</td>
                                 <td className='text-center  '>{item.email}</td>
                                 <td className='text-center  '>{item.number}</td>
+                                <td className='text-center  '>{item.amount}</td>
+                                <td className='text-center  '>{item.donationType}</td>
 
 
                             </tr>

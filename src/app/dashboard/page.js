@@ -5,6 +5,7 @@ import React, { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 const isAdmin = localStorage.getItem("token")
 function pages() {
+  
   const router =  useRouter()
 
 useEffect(()=>{
@@ -28,8 +29,16 @@ if(isAdmin !== null){
         Create Media
       </Link>
 
-         <Link href="/createmedia" className='flex justify-center bg-[#ffa500] rounded-md text-white px-4 py-2 '>
+         <Link href="/leads" className='flex justify-center bg-[#ffa500] rounded-md text-white px-4 py-2 '>
         Get Leads
+      </Link>
+
+      <Link href="/successdonation" className='flex justify-center bg-[#ffa500] rounded-md text-white px-4 py-2 '>
+        Success Donation
+      </Link>
+
+      <Link href="/faileddonation" className='flex justify-center bg-[#ffa500] rounded-md text-white px-4 py-2 '>
+        Failed Donation
       </Link>
       {/* <Link href="/updatemedia/123" className=' flex justify-center bg-blue-500 text-white px-4 py-2 rounded-sm'>
         Update Media

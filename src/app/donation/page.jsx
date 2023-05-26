@@ -7,6 +7,7 @@ import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Spinner from '@/components/Spinner';
 
 function Page() {
     // HOOK
@@ -71,7 +72,8 @@ function Page() {
     return (
         <>
             <Navbar />
-            {/* {isLoading ? <Spinner /> : null} */}
+            {isLoading ? <Spinner /> : null}
+
             <ToastContainer />
             <div className=' w-full bg-white flex justify-center items-center flex-col pt-10 pb-20'>
                 <h1 className='text-3xl my-12 text-center'>DONATION !</h1>
@@ -164,7 +166,7 @@ function Page() {
 
                         </div>
                     </div>
-                    
+
                     <div className="flex flex-wrap -mx-3 mb-6">
                         <div className="w-full px-3">
                             <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
@@ -183,7 +185,7 @@ function Page() {
                             </select>
                             <p className="text-red-500 text-xs italic mt-3">{errors.donationType && errors.donationType.message}</p>
                         </div>
-                  
+
 
                         <div className='mt-8 flex justify-end items-end w-full pr-4 '>
                             <button onClick={handleSubmit(submitForm)} className='bg-[#ffa500]  px-4 py-2 rounded-md text-white tracking-wide'>SUBMIT</button>

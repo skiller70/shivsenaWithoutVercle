@@ -46,7 +46,7 @@ function Footer() {
                         {/* TITLE */}
                         {/* LINKS */}
                        <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
-                       <Link href="/">Balashaheb Thakre ji</Link>
+                       <Link href="/">Balashaheb Thackeray  ji</Link>
                         <Link href="/">Anand Dighe ji</Link>
                         <p className=' font-semibold'>Life and history of our leaders</p>
                         <Link href="/">Sri Eknath Shinde ji </Link>

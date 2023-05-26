@@ -51,7 +51,10 @@ function page() {
     <div className=" ">
             <Navbar isAdmin={true}/>
             <ToastContainer/>
-      <form className="w-full  px-20 py-16 flex   flex-col justify-center">
+            
+      <h1 className=' text-2xl mt-8  text-center'>CREATE MEDIA !</h1>
+
+      <form className="w-full  px-8 md:px-20 py-16 flex   flex-col justify-center">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label

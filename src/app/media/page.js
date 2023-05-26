@@ -7,7 +7,7 @@ import Navbar from '@/components/Navbar'
 import axios from 'axios'
 
 
-function page() {
+function Page() {
 // STATE
 const [allData,setAllData] = useState([])
 const isAdmin = localStorage.getItem("token")
@@ -66,4 +66,4 @@ try {
   )
 }
 
-export default page
+export default Page

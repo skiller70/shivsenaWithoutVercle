@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-function page() {
+function Page() {
   //STATE
 
   const [selectedFile, setSelectedFile] = useState(null);
@@ -16,8 +16,12 @@ function page() {
   //STATE
 
   //METHODS
+
+
+  // RESPONSE MESSAGE
   const notifySuccess = () => toast.success("media upload successfully");
   const notifyError = () => toast.error("faild to upload media");
+   // RESPONSE MESSAGE
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -125,4 +129,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

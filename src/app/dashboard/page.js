@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 const isAdmin = localStorage.getItem("token")
-function pages() {
+function Page() {
   
   const router =  useRouter()
 
@@ -57,4 +57,4 @@ if(isAdmin !== null){
   )
 }
 
-export default pages
+export default Page

@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-function page() {
+function Page() {
 
 
 
@@ -78,4 +78,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

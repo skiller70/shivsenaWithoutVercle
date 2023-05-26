@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/navigation';
 
 
-function page() {
+function Page() {
     // HOOK
     const router = useRouter();
 

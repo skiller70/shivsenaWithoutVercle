@@ -1,5 +1,5 @@
 "use client"
-import Card from '@/components/Card'
+
 import Navbar from '@/components/Navbar'
 import { useRouter, useParams } from 'next/navigation'
 import axios from 'axios'
@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-function page({ paramas }) {
+function Page({ paramas }) {
   const params = useParams();
   const id = params.id;
   // HOOK

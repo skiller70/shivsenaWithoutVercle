@@ -14,7 +14,7 @@ function Page({ paramas }) {
   // HOOK
   const router = useRouter()
 
-  // HOOK
+  // HOOK 
   console.log(id)
   // STATE
   const [allMedia, setAllMedia] = useState([])
@@ -198,4 +198,4 @@ function Page({ paramas }) {
   )
 }
 
-export default page
+export default Page

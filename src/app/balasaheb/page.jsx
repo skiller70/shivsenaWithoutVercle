@@ -6,7 +6,7 @@ import Story from '@/components/Story'
 
 
 
-function page() {
+function Page() {
 
 
 

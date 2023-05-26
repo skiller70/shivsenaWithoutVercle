@@ -28,7 +28,7 @@ function Page({ paramas }) {
   // STATE
   useEffect(() => {
     fetchMedia()
-  }, [])
+  })
 
 
 

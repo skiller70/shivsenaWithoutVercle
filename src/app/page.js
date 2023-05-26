@@ -12,7 +12,17 @@ import Link from 'next/link'
 
 
 export default function Home() {
-  const isAdmin = localStorage.getItem("token")
+
+
+
+  if (typeof window !== 'undefined') {
+    // Perform localStorage action
+    const isAdmin = localStorage.getItem("token")
+  }
+
+
+
+
   return (
     <>
 

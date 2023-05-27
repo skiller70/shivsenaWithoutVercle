@@ -8,11 +8,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
 
 function Navbar(props) {
-const router = useRouter()
+    const router = useRouter()
 
     // METHODS 
 
-    const userLogout = () =>{
+    const userLogout = () => {
         localStorage.removeItem("token")
         router.push("/login")
     }
@@ -49,12 +49,13 @@ const router = useRouter()
                     {props.isAdmin ? <div className='mx-[4%]lg:mx-[8%] flex gap-x-2 lg:gap-x-8 flex-1 w-full justify-center'  >
                         <Link className=' hover:border-b-4  ' href="/dashboard">Dashboard</Link>
                         {/* <Link className=' hover:border-b-4  ' href="/">Our Story</Link>*/}
-                        <Link className=' hover:border-b-4  ' href="/media">Media</Link> 
+                        <Link className=' hover:border-b-4  ' href="/media">Media</Link>
 
                     </div> : <div className='mx-[4%]lg:mx-[8%] flex gap-x-2 lg:gap-x-8 flex-1 w-full justify-center'  >
                         <Link className=' hover:border-b-4  ' href="/">Home</Link>
-                        <Link className=' hover:border-b-4  ' href="/">Our Story</Link>
+                        <Link className=' hover:border-b-4  ' href="/ourstory">Our Story</Link>
                         <Link className=' hover:border-b-4  ' href="/media">Media</Link>
+                        <Link className=' hover:border-b-4  ' href="/statewebsites">State Websites</Link>
 
                     </div>}
 
@@ -89,23 +90,23 @@ const router = useRouter()
             >
                 <div className=' pt-6'>
 
-                    {props.isAdmin?<div className=' flex  justify-center flex-col  mx-32 gap-y-4'  >
+                    {props.isAdmin ? <div className=' flex  justify-center flex-col  mx-32 gap-y-4'  >
                         <Link className='  ' href="/">Dashboard</Link>
                         {/* <Link className='   ' href="/">Our Story</Link>
                         <Link className='  ' href="/">Media</Link> */}
 
                     </div>
-:<div className=' flex  justify-center flex-col  mx-32 gap-y-4'  >
-<Link className='  ' href="/">Home</Link>
-<Link className='   ' href="/">Our Story</Link>
-<Link className='  ' href="/">Media</Link>
+                        : <div className=' flex  justify-center flex-col  mx-32 gap-y-4'  >
+                            <Link className='  ' href="/">Home</Link>
+                            <Link className='   ' href="/">Our Story</Link>
+                            <Link className='  ' href="/">Media</Link>
 
-</div>
-}
+                        </div>
+                    }
 
                     {props.isAdmin ? <div className='flex items-center flex-row gap-x-4 mt-8  justify-center' >
-                    
-                        <button className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md'  onClick={userLogout}>Logout</button>
+
+                        <button className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' onClick={userLogout}>Logout</button>
                         {/* <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link> */}
                     </div> : <div className='flex items-center flex-row gap-x-4 mt-8  justify-center' >
 

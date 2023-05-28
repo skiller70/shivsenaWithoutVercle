@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
-function page() {
+function Page() {
 
     const [initialLoading, setInitialLoading] = useState(false)
 
@@ -35,4 +35,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

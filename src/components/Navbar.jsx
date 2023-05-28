@@ -24,7 +24,7 @@ function Navbar(props) {
     // STATE
     return (
         <>
-            <div className='px-4 bg-[#FF7F50] h-24  sticky top-0 z-50 md:flex  justify-between items-center w-full lg:px-16 '>
+            <div className='px-4 bg-[#FF7F50] h-24  sticky top-0 z-30 md:flex  justify-between items-center w-full lg:px-16 '>
 
                 {/* NAVBAR TOGGLE */}
 

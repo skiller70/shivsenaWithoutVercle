@@ -5,6 +5,7 @@ import Card from '@/components/Card'
 import CardImg from '@/components/CardImg'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
+import Loading from '@/components/Loading'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -25,7 +26,7 @@ const [isAdminLogin,setIsAdminLogin] = useState(null)
 
   return (
     <>
-
+          <Loading/>
       <Navbar />
       <div className=''>
         <Hero />

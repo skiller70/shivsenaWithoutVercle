@@ -8,12 +8,16 @@ import Hero from '@/components/Hero'
 import Loading from '@/components/Loading'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
+import Head from 'next/head';
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 
 
+
 export default function Home() {
+
+
 
   useEffect(() => {
     const admin = localStorage.getItem("token")
@@ -26,6 +30,8 @@ export default function Home() {
 
   return (
     <>
+
+
       <Loading />
       <Navbar />
       <div className=''>

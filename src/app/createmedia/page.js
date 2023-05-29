@@ -10,6 +10,7 @@ function Page() {
 
   const [selectedFile, setSelectedFile] = useState(null);
   const [title, setTitle] = useState("");
+  const [link, setLink] = useState("");
   const [text, setText] = useState("");
 
 
@@ -33,6 +34,8 @@ function Page() {
     data.append("media", selectedFile);
     data.append("title", title);
     data.append("text", text);
+    data.append("link", link);
+
    
   
   try {
@@ -99,6 +102,26 @@ function Page() {
             />
           </div>
 
+          
+          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              htmlFor="grid-first-name"
+            >
+             Link
+            </label>
+            <input
+              value={link}
+              onChange={(e) => {
+                setLink(e.target.value);
+              }}
+              className="border-gray-500  appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              id="grid-first-name"
+              type="text"
+            
+            />
+          </div>
+
 
           <div className="flex  md:flex-row flex-col  justify-between items-center w-full">
             <div className="my-3 ml-3">
@@ -106,7 +129,7 @@ function Page() {
                 htmlFor="formFile"
                 className="mb-2 inline-block text-neutral-700 dark:text-neutral-200"
               >
-                Default file input example
+                Upload Image
               </label>
               <input
                 onChange={handleFileChange}

@@ -55,8 +55,8 @@ function Card(props) {
 
 
 
-
-  <a  href={props.link} className=' cursor-pointer bg-blue-700 text-white px-4 py-2 rounded-md' >Read More</a>
+{/* 
+  <a  href={props.link} className=' cursor-pointer bg-blue-700 text-white px-4 py-2 rounded-md' >Read More</a> */}
 </div>}
 
 

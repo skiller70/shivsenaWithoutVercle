@@ -14,23 +14,16 @@ function Page() {
   useEffect(() => {
 
     const token = localStorage.getItem("token")
-
-
     setIsAdmin(token)
   }, [])
 
 
+if (isAdmin !== null) {
 
-
-
-
-
-  // if (isAdmin !== null) {
-
-  //   router.push("/dashboard")
-  // } else {
-  //   router.push("/")
-  // }
+    router.push("/dashboard")
+  } else {
+    router.push("/")
+  }
 
 
 

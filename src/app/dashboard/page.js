@@ -3,30 +3,20 @@ import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-
 function Page() {
-
   const router = useRouter()
-
-  const [isAdmin, setIsAdmin] = useState(null)
-
-
   useEffect(() => {
-
-    const token = localStorage.getItem("token")
-    setIsAdmin(token)
+    if (localStorage.getItem("token") == null) {
+      router.push("/")
+    } else {
+      return false
+    }
   }, [])
 
 
-  if (isAdmin !== null) {
-
-    router.push("/dashboard")
-  } else {
-   return router.push("/")
-  }
 
 
-
+  const [isAdmin, setIsAdmin] = useState(null)
 
 
 
@@ -65,6 +55,10 @@ function Page() {
 
     </div>
   )
+
+
+
+
 }
 
 export default Page

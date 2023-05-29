@@ -27,10 +27,10 @@ function Footer() {
                         {/* TITLE */}
                         {/* LINKS */}
                        <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
-                       <Link className='' href="/">History and development <br /> of shivshena</Link>
-                        <Link href="/">Our philosophy</Link>
-                        <Link href="/">Constitution </Link>
-                        <Link href="/">History of the party</Link>
+                       <Link className='' href="/historyofshivsena">History and development <br /> of shivshena</Link>
+                        <Link href="/ourphilosophy">Our philosophy</Link>
+                        <Link href="/constitution">Constitution </Link>
+                        <Link href="/historyofparty">History of the party</Link>
                        </div>
                         {/* LINKS */}
                     </div>
@@ -46,13 +46,13 @@ function Footer() {
                         {/* TITLE */}
                         {/* LINKS */}
                        <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
-                       <Link href="/">Balashaheb Thackeray  ji</Link>
-                        <Link href="/">Anand Dighe ji</Link>
+                       <Link href="/balasahebthakareji">Balashaheb Thackeray  ji</Link>
+                        <Link href="/anandji">Anand Dighe ji</Link>
                         <p className=' font-semibold'>Life and history of our leaders</p>
-                        <Link href="/">Sri Eknath Shinde ji </Link>
-                        <Link href="/">Sri Anandrao Adsul ji </Link>
-                        <Link href="/">Sri Shrikant Shinde  ji </Link>
-                        <Link href="/">Sri CAPT. Abhijeet Adsul ji </Link>
+                        <Link href="/eknathshindeji">Sri Eknath Shinde ji </Link>
+                        <Link href="/anandraoji">Sri Anandrao Adsul ji </Link>
+                        <Link href="/shrikantji">Sri Shrikant Shinde  ji </Link>
+                        <Link href="/abhijeetji">Sri CAPT. Abhijeet Adsul ji </Link>
                         
 
                        
@@ -71,11 +71,11 @@ function Footer() {
                         {/* TITLE */}
                         {/* LINKS */}
                        <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
-                       <Link href="/">Press Releases</Link>
-                        <Link href="/">Speeches </Link>
-                        <Link href="/">Interviews and Articles </Link>
-                        <Link href="/">Photo Gallery</Link>
-                        <Link href="/">Video Gallery</Link>
+                       <Link href="/pressrealese">Press Releases</Link>
+                        <Link href="/speeches">Speeches </Link>
+                        <Link href="/intervewarticles">Interviews and Articles </Link>
+                        <Link href="/photogallery">Photo Gallery</Link>
+                        <Link href="/videogallery">Video Gallery</Link>
                       
                        </div>
                         {/* LINKS */}

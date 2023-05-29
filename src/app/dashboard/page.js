@@ -18,11 +18,11 @@ function Page() {
   }, [])
 
 
-if (isAdmin !== null) {
+  if (isAdmin !== null) {
 
     router.push("/dashboard")
   } else {
-    router.push("/")
+   return router.push("/")
   }
 
 

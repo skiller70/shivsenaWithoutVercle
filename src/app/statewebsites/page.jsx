@@ -16,14 +16,14 @@ function page() {
 
             </div>
             <div className='flex flex-col justify-around m-4 md:m-16 md:flex-row gap-y-6 md:gap-y-0 '>
-                <Link href="/" className='text-lg items-center bg-[#ffa500] text-white px-4 py-2  gap-2 rounded-sm'>
+                <Link href="/delhi" className='text-lg items-center bg-[#ffa500] text-white px-4 py-2  gap-2 rounded-sm'>
                     Delhi
                     <FontAwesomeIcon className='mx-2' icon={faMapLocationDot} />
 
                 </Link>
 
 
-                <Link href="/" className='text-lg items-center bg-[#ffa500] text-white px-4 py-2  gap-2 rounded-sm'>
+                <Link href="/maharashtra" className='text-lg items-center bg-[#ffa500] text-white px-4 py-2  gap-2 rounded-sm'>
                     Maharashtra
                     <FontAwesomeIcon className='mx-2' icon={faMapLocationDot} />
 
@@ -31,13 +31,13 @@ function page() {
 
 
 
-                <Link href="/" className='text-lg items-center bg-[#ffa500] text-white px-4 py-2  gap-2 rounded-sm'>
+                <Link href="/goa" className='text-lg items-center bg-[#ffa500] text-white px-4 py-2  gap-2 rounded-sm'>
                     Goa
                     <FontAwesomeIcon className='mx-2' icon={faMapLocationDot} />
 
                 </Link>
 
-                <Link href="/" className='text-lg items-center bg-[#ffa500] text-white px-4 py-2  gap-2 rounded-sm'>
+                <Link href="/rajasthan" className='text-lg items-center bg-[#ffa500] text-white px-4 py-2  gap-2 rounded-sm'>
                     Rajasthan
                     <FontAwesomeIcon className='mx-2' icon={faMapLocationDot} />
 

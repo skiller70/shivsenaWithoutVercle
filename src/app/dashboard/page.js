@@ -11,9 +11,7 @@ function Page() {
     } else {
       return false
     }
-  }, [])
-
-
+  }, )
 
 
   const [isAdmin, setIsAdmin] = useState(null)

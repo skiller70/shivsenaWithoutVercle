@@ -8,7 +8,6 @@ import Hero from '@/components/Hero'
 import Loading from '@/components/Loading'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
-import Head from 'next/head';
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 

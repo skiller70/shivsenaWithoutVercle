@@ -8,10 +8,8 @@ function Page() {
   useEffect(() => {
     if (localStorage.getItem("token") == null) {
       router.push("/")
-    } else {
-      return false
-    }
-  },[router] )
+    } 
+  },[] )
 
 
   const [isAdmin, setIsAdmin] = useState(null)

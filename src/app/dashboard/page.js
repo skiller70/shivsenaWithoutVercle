@@ -11,7 +11,7 @@ function Page() {
     } else {
       return false
     }
-  }, )
+  },[router] )
 
 
   const [isAdmin, setIsAdmin] = useState(null)

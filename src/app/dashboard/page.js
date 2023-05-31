@@ -9,7 +9,7 @@ function Page() {
     if (localStorage.getItem("token") == null) {
       router.push("/")
     } 
-  },[] )
+  },[router] )
 
 
   const [isAdmin, setIsAdmin] = useState(null)

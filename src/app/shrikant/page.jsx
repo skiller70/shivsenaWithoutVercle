@@ -6,9 +6,34 @@ import React from 'react'
 function Page() {
   return (
     <div>
-<Navbar/>
-<Story title="Shrikant Shinde" text="Dr. Shrikant Shinde won the Kalyan parliamentary[6] seat defeating Anand Paranjpe of NCP by a margin of over 2.50 lakh votes. In 2014, India witnessed its 32 first time MP's under 35.  Dr. Shinde was one of the youngest Maratha MPs among others. He was just 27 when elected from Kalyan Constituency, pursuing Master of Surgery. According to the Election Commission, the constituency had a total of 1,922,046 eligible voters during the 2014 Lok Sabha elections. Dr. Shinde of Shivsena Party won the seat by defeating the NCP candidate by a margin of 2,50,749 votes which was 30.42% of the total votes polled in the constituency. Shivsena had a vote share of 53.49% in 2014 in the seat. There were a total of 18 contestants in 2014. According to the 2014 electoral rolls, the electorate included 10,44,943 men, 8,76,995 women and 96 voters of the third gender."/>
-<Footer/>
+      <Navbar />
+      <Story title="Shrikant Shinde ji" text="Shrikant Eknath Shinde ji is a member of the 17th Lok Sabah of India. He represents the Kalyan constituency of Maharashtra and is a member of the Shiv Sena political party.
+
+He is the son of Eknath Shinde ji the Cabinet Minister of Public Works (MSRDC, Public Undertaking) in the Government of Maharashtra. At the time of his 2014 election win, he was a final-year Master's student of orthopedics." img={"/shrikantStory1.jpg"} />
+
+      <div className=' md:mt-2 lg:-mt-12 mx-10 mb-10 md:mx-16 md:px-3 '>
+        <p className=' text-xl font-normal'>Shrikant Shinde ji Birth, Education, and Family</p>
+        <br />
+        <p className='  text-justify'>
+          Shrikant Shinde ji was born on 4 February 1987 in Mumbai, Maharashtra, India. She belongs to a Hindu family. Shrikant Shindes fathers name is Eknath Shinde ji. Let us tell you that Shrikant ji is the CM of Maharashtra state. Apart from this, his mothers name is Lata Shinde (Shrikant Shinde Mothers Name). Lata is a business woman by profession. Srikanth also had a brother and a sister named Dipesh Shinde and Shubhada Shinde. Please tell that Srikanths brother and sister died on June 2, 2000, after their boat capsized in the lake with this Srikanth is a married person. Shrikant Shindes wifes name is Vrushali Shinde. Vrushali and Srikanth also have a younger son named Rudransh Shinde.
+
+          Dr. Shrikant Shinde ji is a livewire Medico (MBBS, M.S. Orthopedics).  He completed his M.S. from Dr. D.Y. Patil Medical College, Navi Mumbai. Shindes family members include Father Shri. Eknath Shinde ji, Mother Smt. Lata Eknath Shinde, wife Vrushali Shrikant Shinde and his son Rudransh. Shinde got elected as a Member of Parliament in 2014 just two months before the final exam of M.S. He is a very enthusiastic person who likes making positive changes to influence the common man. He looks after Kalyan Constituency and ensures making good decisions for the youth and all its citizens. He has been the MP of the densely populated constituency since May 2014. He won the election a second time in May 2019.
+
+        </p>
+    <br />
+        <p className='text-xl font-normal'>Eknath Shinde Political Career</p>
+
+
+
+
+      </div>
+
+
+
+
+
+
+      <Footer />
 
 
 

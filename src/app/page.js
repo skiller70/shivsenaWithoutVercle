@@ -59,7 +59,7 @@ export default function Home() {
       <div className='mt-4 md:mt-12' >
         <AnandRao />
       </div>
-      <div>
+      <div className='mt-10'>
         <Abhijit />
       </div>
       {/* IMAGE CARD */}

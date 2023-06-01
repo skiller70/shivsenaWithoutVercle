@@ -17,10 +17,11 @@ function Abhijit() {
             {/* TEXT */}
             <div className=' px-4 md:px-16 pt-16 md:w-[60%] order-first md:order-last'>
                 {/* HEADER TEXT */}
-                <h1 className=' font-semibold  text-2xl' >Captain Abhijitt Adsul Ji</h1>
+                <h1 className=' font-semibold  text-2xl' >Captain Abhijit  Adsul Ji</h1>
+                <br />
                 {/* HEADER TEXT */}
                 {/* PARAGRAPH */}
-                <p className='  leading-relaxed'>Ex- MLA National General Secretary Of Party Also He is Director In Mumbai District Co-Operative Bank also in the city Co-Operative Bank. He has been honored with Sansad Ratna Award in 2011, 2012 and 2013. In July 2022, he resigned from Shiv Sena as a leader of the party.</p>
+                <p className='  leading-relaxed'>Ex- MLA National General Secretary Of Party Also He is Director In Mumbai District Co-Operative Bank also in the city Co-Operative Bank. He has been honored with Sansad Ratna Award in 2011, 2012 and 2013. </p>
                 {/* PARAGRAPH */}
             </div>
 

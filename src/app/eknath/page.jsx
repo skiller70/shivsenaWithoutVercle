@@ -16,7 +16,7 @@ The 58-year-old was elected to the Maharashtra Assembly for four consecutive ter
 
 Following his victory in 2014, Shinde, the most popular leader was chosen to represent the Shiv Sena legislative party. He later served as the Leader of Opposition in the Maharashtra Assembly for a short time. In the Sena-BJP government, he was appointed PWD minister. On 30th June 2022, Eknath Shinde was sworn in as the 20th Chief Minister of Maharashtra.
 
-Shinde ji was introduced to politics by then Thane Shiv Sena President Anand Dighe in early 1980 and became successor to the latters legacy after his death in 2001. He rose through the ranks after launching a labour union for the party. His position in the Shiv Sena became stronger after Bal Thackerays nephew Raj left the party and launched Maharashtra Navnirman Sena." img={"/eknathStory.jpg"} />
+Shinde ji was introduced to politics by then Thane Shiv Sena President Anand Dighe in early 1980 and became successor to the latters legacy after his death in 2001. He rose through the ranks after launching a labour union for the party. His position in the Shiv Sena became stronger after Bal Thackerays nephew Raj left the party and launched Maharashtra Navnirman Sena." img={"/eknathji.jpg"} />
 
       <div className=' mx-10 mb-10 md:mx-16 md:px-3 '>
         <h1 className=' text-2xl font-medium'>Humble Beginnings

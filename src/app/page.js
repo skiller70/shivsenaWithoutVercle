@@ -42,18 +42,18 @@ export default function Home() {
 
       <div className=' relative mt-4 md:mt-12   '>
         <Link href="/eknath" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
-        <Image src="/eknath.jpg" width={1920} height={1080} alt='eknath' />
+        <Image src="/eknathji.jpg" width={1920} height={1080} alt='eknath' />
       </div>
 
 
       <div className=' relative mt-4 md:mt-12   '>
         <Link href="/anandrao" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
-        <Image src="/anandrao.jpg" width={1920} height={800} alt='anandrao' />
+        <Image src="/anandraoji.jpg" width={1920} height={800} alt='anandrao' />
       </div>
 
       <div className=' relative mt-4 md:mt-12   '>
         <Link href="/shrikant" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
-        <Image src="/shrikant.jpg" width={1920} height={800} alt='shrikant' />
+        <Image src="/shrikantji.jpg" width={1920} height={800} alt='shrikant' />
       </div>
 
       <div className='mt-4 md:mt-12' >

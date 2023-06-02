@@ -32,16 +32,28 @@ function page() {
 
         modules={[Pagination, Navigation]}
         navigation={true}
+        breakpoints={
+          {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 50,
+            },
+          }
 
-        spaceBetween={50}
-        slidesPerView={2}
+        }
+        // spaceBetween={50}
+        // slidesPerView={2}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
         <div className='text-2xl text-center my-32'>Constitution</div>
 
         <SwiperSlide><Image src="/constitution.jpg" height={500
-        } width={800} quality={100} /></SwiperSlide>
+        } width={800} quality={100} alt='constitution' /></SwiperSlide>
         <SwiperSlide><Image src="/constitution1.jpg" height={500
         } width={800} quality={100} alt='constitution1' /></SwiperSlide>
         <SwiperSlide><Image src="/constitution2.jpg" height={500
@@ -83,7 +95,7 @@ function page() {
 
 
 
-      
+
 
 
       <Footer />

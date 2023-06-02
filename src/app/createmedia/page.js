@@ -110,7 +110,7 @@ function Page() {
             >
              Link
             </label>
-            <input
+            <textarea
               value={link}
               onChange={(e) => {
                 setLink(e.target.value);

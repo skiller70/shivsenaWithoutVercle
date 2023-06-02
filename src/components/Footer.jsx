@@ -26,12 +26,12 @@ function Footer() {
                         <h1 className=' font-semibold'>The Party </h1>
                         {/* TITLE */}
                         {/* LINKS */}
-                       <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
-                       <Link className='' href="/historyofshivsena">History and development <br /> of shivshena</Link>
-                        <Link href="/ourphilosophy">Our philosophy</Link>
-                        <Link href="/constitution">Constitution </Link>
-                        <Link href="/historyofparty">History of the party</Link>
-                       </div>
+                        <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
+                            <Link className='' href="/historyofshivsena">History of shivsena</Link>
+                            <Link href="/ourphilosophy">Our philosophy</Link>
+                            <Link href="/constitution">Constitution </Link>
+                            <Link href="/historyofparty">History of the party</Link>
+                        </div>
                         {/* LINKS */}
                     </div>
 
@@ -45,18 +45,15 @@ function Footer() {
                         <h1 className=' font-semibold'>Leadership</h1>
                         {/* TITLE */}
                         {/* LINKS */}
-                       <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
-                       <Link href="/balasahebthakareji">Balashaheb Thackeray  ji</Link>
-                        <Link href="/anandji">Anand Dighe ji</Link>
-                        <p className=' font-semibold'>Life and history of our leaders</p>
-                        <Link href="/eknathshindeji">Sri Eknath Shinde ji </Link>
-                        <Link href="/anandraoji">Sri Anandrao Adsul ji </Link>
-                        <Link href="/shrikantji">Sri Shrikant Shinde  ji </Link>
-                        <Link href="/abhijeetji">Sri CAPT. Abhijeet Adsul ji </Link>
-                        
-
-                       
-                       </div>
+                        <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
+                            <Link href="/balasahebthakareji">Balashaheb Thackeray  ji</Link>
+                            <Link href="/anandji">Anand Dighe ji</Link>
+                            <p className=' font-semibold'>Life and history of our leaders</p>
+                            <Link href="/eknathshindeji">Sri Eknath Shinde ji </Link>
+                            <Link href="/anandraoji">Sri Anandrao Adsul ji </Link>
+                            <Link href="/shrikantji">Sri Shrikant Shinde  ji </Link>
+                            <Link href="/abhijeetji">Sri CAPT. Abhijit Adsul ji </Link>
+                            </div>
                         {/* LINKS */}
                     </div>
 
@@ -70,14 +67,14 @@ function Footer() {
                         <h1 className=' font-semibold'>Media Resource</h1>
                         {/* TITLE */}
                         {/* LINKS */}
-                       <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
-                       <Link href="/pressrealese">Press Releases</Link>
-                        <Link href="/speeches">Speeches </Link>
-                        <Link href="/intervewarticles">Interviews and Articles </Link>
-                        <Link href="/photogallery">Photo Gallery</Link>
-                        <Link href="/videogallery">Video Gallery</Link>
-                      
-                       </div>
+                        <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
+                            <Link href="/pressrealese">Press Releases</Link>
+                            <Link href="/speeches">Speeches </Link>
+                            <Link href="/intervewarticles">Interviews and Articles </Link>
+                            <Link href="/photogallery">Photo Gallery</Link>
+                            <Link href="/videogallery">Video Gallery</Link>
+
+                        </div>
                         {/* LINKS */}
                     </div>
 
@@ -91,12 +88,12 @@ function Footer() {
                         <h1 className=' font-semibold'>Documents</h1>
                         {/* TITLE */}
                         {/* LINKS */}
-                       <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
-                       {/* <Link href="/">First Link</Link>
+                        <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
+                            {/* <Link href="/">First Link</Link>
                         <Link href="/">Second Link</Link>
                         <Link href="/">Third Link</Link>
                         <Link href="/">Forth Link</Link> */}
-                       </div>
+                        </div>
                         {/* LINKS */}
                     </div>
 

@@ -40,7 +40,7 @@ function Page() {
           party in India that was formed in 2022 and dissolved in 2023. The
           party was led by Eknath Shinde and was a result of a split in the Shiv
           Sena. After the split, the Election Commission of India (ECI) allotted
-          the party a new symbol as the main Shiv Sena&#39;s symbol was frozen.
+          the party a new symbol as the main Shiv Senas symbol was frozen.
           On 17 February 2023, the ECI granted the BSS the party name and
           symbol, the Shiv Sena and the Bow and Arrow, respectively.
         </p>

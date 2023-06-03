@@ -18,7 +18,7 @@ function Page() {
           population in Maharashtra. In its early years, Shiv Sena focused on
           issues such as job opportunities for the local population, protection
           of Marathi language and culture, and fighting for the rights of the
-          "sons of the soil." The party gained popularity by tapping into the
+          sons of the soil. The party gained popularity by tapping into the
           sentiments of the Maharashtrian people who felt marginalized in their
           own state. Over time, Shiv Sena started wielding considerable
           influence and expanding its support base in Maharashtra. It built a

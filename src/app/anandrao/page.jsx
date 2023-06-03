@@ -66,7 +66,7 @@ He has been honored with Sansad Ratna Award in 2011, 2012 and 2013. "
           elected multiple times from this constituency. Political Positions:
           Adsul has held various political positions during his career. He has
           been actively involved in party activities and has worked to
-          strengthen the Shiv Sena's presence in his constituency. Parliamentary
+          strengthen the Shiv Senas presence in his constituency. Parliamentary
           Contributions: As a Member of Parliament (MP), Adsul has participated
           in parliamentary debates and discussions on various issues. He has
           raised concerns related to the welfare of his constituents and has

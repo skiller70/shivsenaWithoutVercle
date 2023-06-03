@@ -25,7 +25,7 @@ function Page() {
           strong grassroots network and gained a reputation for its street
           activism and aggressive style of politics. The party employed tactics
           such as protests, demonstrations, and strikes to make its presence
-          felt and push for its demands. Shiv Sena's ideology is often
+          felt and push for its demands. Shiv Senas ideology is often
           characterized by its strong advocacy for Hindutva, a concept that
           emphasizes the cultural and religious identity of Hindus. While
           initially focusing on regional issues, the party later expanded its

@@ -26,7 +26,7 @@ He is the son of Eknath Shinde ji the Cabinet Minister of Public Works (MSRDC, P
         <br />
         <p className='text-justify'>
         Shrikant Eknath Shinde, also known as Dr. Shrikant Shinde, is a prominent political figure associated with the Shiv Sena party in Maharashtra, India. Here is an overview of his political career:
-Early Political Engagement: Shrikant Shinde joined the Shiv Sena party and became an active member early in his political career. He participated in party activities and worked on strengthening the party's organization at the grassroots level.
+Early Political Engagement: Shrikant Shinde joined the Shiv Sena party and became an active member early in his political career. He participated in party activities and worked on strengthening the partys organization at the grassroots level.
 Roles within the Party: Shrikant Shinde has held various leadership positions within the Shiv Sena. He has been involved in party affairs and has contributed to the party's growth and development.
 Political Office: Shrikant Shinde has served as a Member of the Maharashtra Legislative Assembly (MLA) from the Kalyan Rural constituency. As an MLA, he has represented the interests of his constituents and worked on addressing their concerns.
 Ministerial Positions: Shrikant Shinde has held important ministerial portfolios in the Maharashtra state government. He has been a Cabinet Minister, handling significant responsibilities related to governance and administration.

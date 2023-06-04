@@ -6,7 +6,10 @@ import React, { useState } from 'react'
 import 'swiper/css';
 import Image from 'next/image';
 import "swiper/css/pagination";
-import { Pagination, Navigation } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 
 
 
@@ -29,9 +32,13 @@ function page() {
 
       <Swiper
         className=' my-6'
+        // observer={true}
+        // observeParents={true}
+        // parallax={true}
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        navigation
 
-        modules={[Pagination, Navigation]}
-        navigation={true}
+      scrollbar={{ draggable: true }}
         breakpoints={
           {
             640: {

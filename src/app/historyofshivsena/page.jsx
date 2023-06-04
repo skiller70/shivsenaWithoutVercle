@@ -1,13 +1,18 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 import React from "react";
 
 function Page() {
   return (
     <div className=" ">
       <Navbar />
+<Image src={"/oldBalasaheb.jpeg"} width={1920} height={800} alt="oldbala"/>
+
+
+
       <div className=" my-6">
-        <div className="text-2xl text-center my-10"> SHIV SENA HISTORY </div>
+        <div className="text-2xl text-center my-16"> SHIV SENA HISTORY </div>
         <p className=" md:mx-16 mx-8 text-justify">
           Shiv Sena is a political party in India, particularly prominent in the
           state of Maharashtra. Here is a brief overview of the history of Shiv

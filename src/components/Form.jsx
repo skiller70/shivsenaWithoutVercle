@@ -16,7 +16,7 @@ function Form(props) {
     formState: { errors },
   } = useForm();
 
-  const { title, fullName, email, phone, message, api } = props
+  const { title, fullName, email, phone, message, api,errorMessage,successMessage } = props
 
   // HOOK
   // STATE
@@ -26,8 +26,8 @@ function Form(props) {
 
   // STATE
   // METHODS
-  const notifySuccess = () => toast.success("Thank you for getting in touch");
-  const notifyError = () => toast.error("There was an error trying to send your message.Please try again later.");
+  const notifySuccess = () => toast.success(successMessage);
+  const notifyError = () => toast.error(errorMessage);
   const submitForm = async (data) => {
 
 

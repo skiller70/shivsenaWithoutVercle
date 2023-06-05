@@ -58,22 +58,19 @@ He has been honored with Sansad Ratna Award in 2011, 2012 and 2013. "
         </ul>
 
         <br />
-        <p className="text-xl font-normal">Shrikant Shinde Political Career</p>
+        <p className="text-xl font-normal">Political Career</p>
         <br />
         <p className=" text-justify">
-          Constituency: Adsul has represented the Amravati constituency in the
-          Lok Sabha, the lower house of the Indian Parliament. He has been
-          elected multiple times from this constituency. Political Positions:
-          Adsul has held various political positions during his career. He has
-          been actively involved in party activities and has worked to
-          strengthen the Shiv Senas presence in his constituency. Parliamentary
-          Contributions: As a Member of Parliament (MP), Adsul has participated
-          in parliamentary debates and discussions on various issues. He has
-          raised concerns related to the welfare of his constituents and has
-          worked on addressing their needs and demands. Committee Memberships:
-          Adsul has been a member of different parliamentary committees,
-          contributing to the legislative process and policy-making. The
-          specific committees he has served on may vary over time.
+
+          Constituency: Adsul has represented the Amravati constituency in the Lok Sabha, the lower house of the Indian
+          Parliament. He has been elected multiple times from this constituency.
+          Political Positions: Adsul has held various political positions during his career. He has been actively involved in
+          party activities and has worked to strengthen the Shiv Sena&#39;s presence in his constituency.
+          Parliamentary Contributions: As a Member of Parliament (MP), Adsul has participated in parliamentary debates
+          and discussions on various issues. He has raised concerns related to the welfare of his constituents and has worked
+          on addressing their needs and demands.
+          Committee Memberships: Adsul has been a member of different parliamentary committees, contributing to the
+          legislative process and policy-making. The specific committees he has served on may vary over time.
         </p>
       </div>
 

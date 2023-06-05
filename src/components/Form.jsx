@@ -6,7 +6,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import Spinner from './Spinner';
-function Form() {
+function Form(props) {
   // HOOK
   const {
     register,
@@ -16,7 +16,7 @@ function Form() {
     formState: { errors },
   } = useForm();
 
-
+  const { title, fullName, email, phone, message, api } = props
 
   // HOOK
   // STATE
@@ -33,7 +33,7 @@ function Form() {
 
     try {
       setIsLoading(true)
-      const result = await axios.post("http://localhost:4000/mail", data)
+      const result = await axios.post(`http://localhost:4000/${api}`, data)
 
       if (result.status == 200) {
         notifySuccess()
@@ -73,13 +73,13 @@ function Form() {
       {isLoading ? <Spinner /> : null}
       <ToastContainer />
       <div className=' w-full bg-white flex justify-center items-center flex-col pt-10 pb-20'>
-        <h1 className='text-3xl my-12 text-center'>Get IN Touch With US !</h1>
+        <h1 className='text-3xl my-12 text-center'>{title}</h1>
 
         <form className=" max-w-lg  mx-4">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
-                Name
+                {fullName}
               </label>
               <input
 
@@ -103,7 +103,7 @@ function Form() {
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">
-                Email      </label>
+                {email}     </label>
               <input
                 {...register("email", {
                   required: "Email is required",
@@ -120,7 +120,7 @@ function Form() {
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full px-3">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
-                Phone
+                {phone}
               </label>
               <input
                 {...register("number", {
@@ -147,16 +147,16 @@ function Form() {
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full px-3">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
-                About you
+                {message}
               </label>
               <textarea
 
-                {...register("about", {
+                {...register("message", {
                   required: "This field is required",
 
                 })}
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" />
-              <p className="text-red-500 text-xs italic mt-3">{errors.about && errors.about.message}</p>
+              <p className="text-red-500 text-xs italic mt-3">{errors.message && errors.about.message}</p>
             </div>
 
 

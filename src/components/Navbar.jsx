@@ -15,7 +15,7 @@ function Navbar(props) {
     const userLogout = () => {
         localStorage.removeItem("token")
         router.push("/login")
-    }
+    }    
 
 
     // METHODS 
@@ -49,13 +49,14 @@ function Navbar(props) {
                     {props.isAdmin ? <div className='mx-[4%]lg:mx-[8%] flex gap-x-2 lg:gap-x-8 flex-1 w-full justify-center'  >
                         <Link className=' hover:border-b-4  ' href="/dashboard">Dashboard</Link>
                         {/* <Link className=' hover:border-b-4  ' href="/">Our Story</Link>*/}
-                        <Link className=' hover:border-b-4  ' href="/media">Media</Link>
+                        <Link className=' hover:border-b-4  ' href="/medialist">Media</Link>
 
                     </div> : <div className='mx-[4%]lg:mx-[8%] flex gap-x-2 lg:gap-x-8 flex-1 w-full justify-center'  >
                         <Link className=' hover:border-b-4  ' href="/">Home</Link>
                         <Link className=' hover:border-b-4  ' href="/ourstory">Our Story</Link>
-                        <Link className=' hover:border-b-4  ' href="/media">Media</Link>
+                        <Link className=' hover:border-b-4  ' href="/medialist">Media</Link>
                         <Link className=' hover:border-b-4  ' href="/statewebsites">State Websites</Link>
+                        <Link className=' hover:border-b-4  ' href="/contactus">Contact us</Link>
 
                     </div>}
 
@@ -66,7 +67,7 @@ function Navbar(props) {
                         {/* <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link> */}
                     </div> : <div className='flex text-white gap-3 lg:gap-x-4  items-center' >
 
-                        <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Join Shivsena</Link>
+                        <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/joinshivsena">Join Shivsena</Link>
                         <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/donation">Make a Donation</Link>
                     </div>}
 
@@ -98,9 +99,10 @@ function Navbar(props) {
                     </div>
                         : <div className=' flex  justify-center flex-col  mx-32 gap-y-4'  >
                             <Link className='  ' href="/">Home</Link>
-                            <Link className='   ' href="/">Our Story</Link>
-                            <Link className='  ' href="/">Media</Link>
-
+                            <Link className='  ' href="/ourstory">Our Story</Link>
+                            <Link className='  ' href="/medialist">Media</Link>
+                            <Link className='  ' href="/contactus">Contact us</Link>
+                            <Link className='  ' href="/statewebsites">State Websites</Link>
                         </div>
                     }
 

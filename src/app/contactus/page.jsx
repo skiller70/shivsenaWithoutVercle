@@ -9,7 +9,7 @@ function Page() {
 
 <Navbar/>
 
-<Form title="CONTACT US" fullName="FULL NAME" email="EMAIL" phone="PHONE" message="MESSAGE" api="contactus"/>
+<Form title="CONTACT US" fullName="FULL NAME" email="EMAIL" phone="PHONE" message="MESSAGE" api="contactus" successMessage="Thank you for Contacting us" errorMessage="Failed to Contact"/>
     
 
 <Footer/>

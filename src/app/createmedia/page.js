@@ -90,7 +90,7 @@ function Page() {
             >
              Text
             </label>
-            <input
+            <textarea
               value={text}
               onChange={(e) => {
                 setText(e.target.value);
@@ -110,7 +110,7 @@ function Page() {
             >
              Link
             </label>
-            <textarea
+            <input
               value={link}
               onChange={(e) => {
                 setLink(e.target.value);

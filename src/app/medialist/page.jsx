@@ -23,7 +23,7 @@ function Page() {
 
                     </Link>
 
-                    <Link href="/photogallery" className='text-lg items-center bg-[#ffa500] text-white px-2 py-2  gap-2 rounded-sm'>
+                    <Link href="/media" className='text-lg items-center bg-[#ffa500] text-white px-2 py-2  gap-2 rounded-sm'>
                         Photo Gallery
 
                     </Link>

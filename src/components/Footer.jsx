@@ -71,7 +71,7 @@ function Footer() {
                             <Link href="/pressrealese">Press Releases</Link>
                             <Link href="/speeches">Speeches </Link>
                             <Link href="/intervewarticles">Interviews and Articles </Link>
-                            <Link href="/photogallery">Photo Gallery</Link>
+                            <Link href="/media">Photo Gallery</Link>
                             <Link href="/videogallery">Video Gallery</Link>
 
                         </div>

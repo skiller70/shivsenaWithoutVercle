@@ -9,7 +9,7 @@ function Page() {
       <Navbar />
       <Image src={"/oldBalasaheb.jpeg"} width={1920} height={800} alt="oldbala" />
 
-
+    
 
       <div className=" my-6">
         <div className="text-2xl text-center my-16"> SHIV SENA HISTORY </div>

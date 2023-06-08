@@ -25,6 +25,17 @@ function Page() {
             Create Media
           </Link>
 
+          <Link href="/createvideo" className='flex justify-center bg-[#ffa500] rounded-md text-white px-4 py-2 '>
+            Create Video
+          </Link>
+
+
+          <Link href="/createpress" className='flex justify-center bg-[#ffa500] rounded-md text-white px-4 py-2 '>
+            Create Press
+          </Link>
+
+
+
           <Link href="/leads" className='flex justify-center bg-[#ffa500] rounded-md text-white px-4 py-2 '>
             Get Leads
           </Link>

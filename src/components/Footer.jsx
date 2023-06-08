@@ -68,9 +68,9 @@ function Footer() {
                         {/* TITLE */}
                         {/* LINKS */}
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
-                            <Link href="/pressrealese">Press Releases</Link>
-                            <Link href="/speeches">Speeches </Link>
-                            <Link href="/intervewarticles">Interviews and Articles </Link>
+                            <Link href="/pressrelease">Press Releases</Link>
+                            {/* <Link href="/speeches">Speeches </Link>
+                            <Link href="/intervewarticles">Interviews and Articles </Link> */}
                             <Link href="/media">Photo Gallery</Link>
                             <Link href="/videogallery">Video Gallery</Link>
 

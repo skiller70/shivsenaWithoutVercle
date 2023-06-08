@@ -7,13 +7,17 @@ import React, { useState, useEffect } from 'react'
 
 function Page() {
 
+
   // STATE
   const [allVideo, setAllVideo] = useState([])
 
+  const [isAdmin, setIsAdmin] = useState(null)
   // STATE
 
   // LIFE CYCLE
   useEffect(() => {
+    const token = localStorage.getItem("token")
+    setIsAdmin(token)
     fetchVideo()
   }, [])
 
@@ -44,7 +48,7 @@ function Page() {
         {allVideo.map((item) => (
           <>
 
-            <VideoCard title={item.title} text={item.text} filename={item.filename} id={item._id} />
+            <VideoCard title={item.title} text={item.text} filename={item.filename} id={item._id} isAdmin={isAdmin} />
           </>
         ))}
 

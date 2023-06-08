@@ -6,9 +6,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function VideoCard(props) {
+  
 
 
-    const { title, text, filename, id } = props
+    const { title, text, filename, id ,isAdmin} = props
+
+    
+
+
+
 
     // METHODS 
 
@@ -54,8 +60,8 @@ function VideoCard(props) {
                             {text}
                         </p>
                         <div className='flex justify-between items-center'>
-
-                            <button onClick={deletePost}><FontAwesomeIcon icon={faTrash} size={15} /></button>
+                            {isAdmin? <button onClick={deletePost}><FontAwesomeIcon icon={faTrash} size={15} /></button>:null}
+                            
                         </div>
                     </div>
                 </div>

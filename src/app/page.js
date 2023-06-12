@@ -43,33 +43,38 @@ export default function Home() {
 
       <div className=' relative mt-4 md:mt-12   '>
         <Link href="/ananddighe" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
-        <Image src="/anadDighe.png" width={1920} height={1080} alt='ananddighe' />
+        <Image src="/anandDigheNew.jpg" width={1920} height={1080} alt='ananddighe' />
       </div>
 
       <div className=' relative mt-4 md:mt-12   '>
         <Link href="/eknath" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
-        <Image src="/eknathji.jpg" width={1920} height={1080} alt='eknath' />
+        <Image src="/eknathNew.jpg" width={1920} height={1080} alt='eknath' />
       </div>
-
-
-
 
       <div className=' relative mt-4 md:mt-12   '>
         <Link href="/anandrao" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
-        <Image src="/anandraoji.jpg" width={1920} height={800} alt='anandrao' />
+        <Image src="/anandRaoNew.jpg" width={1920} height={800} alt='anandrao' />
       </div>
 
       <div className=' relative mt-4 md:mt-12   '>
-        <Link href="/shrikant" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
-        <Image src="/shrikantji.jpg" width={1920} height={800} alt='shrikant' />
+        <Link href="/rahulji" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
+        <Image src="/rahulNew.jpg" width={1920} height={800} alt='shrikant' />
       </div>
 
-      <div className='mt-4 md:mt-12' >
-        <AnandRao />
+
+
+      <div className=' relative mt-4 md:mt-12'>
+        <Link href="/abhijeetji" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
+        <Image src="/abhijitNew.jpg" width={1920} height={800} alt='shrikant' />
       </div>
-      <div className='mt-10'>
-        <Abhijit />
+
+
+      <div className=' relative mt-4 md:mt-12   '>
+        <Link href="/shrikant" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] '>View Story</Link>
+        <Image src="/shrikantNew.jpg" width={1920} height={800} alt='shrikant' />
       </div>
+
+    
       {/* IMAGE CARD */}
       <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 p-10 w-full gap-y-8  mt-16'>
         <CardImg img="img1.jpeg" alt="img1" />

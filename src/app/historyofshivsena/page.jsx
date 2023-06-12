@@ -27,11 +27,11 @@ function Page() {
         </p>
         <br />
 
-        <h1 className=" text-2xl text-center mx-4">The Balasahebanchi Shiv Sena</h1>
+        {/* <h1 className=" text-2xl text-center mx-4">The Balasahebanchi Shiv Sena</h1>
         <br />
         <p className=" md:mx-16 mx-8 text-justify">
           The Balasahebanchi Shiv Sena (BSS) was a Hindu nationalist political party in India that was formed in 2022 and dissolved in 2023. The party was led by Eknath Shinde and was a result of a split in the Shiv Sena. After the split, the Election Commission of India (ECI) allotted the party a new symbol as the main Shiv Senas symbol was frozen. On 17 February 2023, the ECI granted the BSS the party name and symbol, the Shiv Sena and the Bow and Arrow, respectively.
-        </p>
+        </p> */}
       </div>
       <Footer />
     </div>

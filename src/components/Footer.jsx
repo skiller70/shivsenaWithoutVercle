@@ -28,9 +28,9 @@ function Footer() {
                         {/* LINKS */}
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
                             <Link className='' href="/historyofshivsena">History of shivsena</Link>
-                            <Link href="/ourphilosophy">Our philosophy</Link>
+                            <Link href="/ourideology">Our Ideology</Link>
                             <Link href="/constitution">Constitution </Link>
-                            <Link href="/historyofparty">History of the party</Link>
+                            {/* <Link href="/historyofparty">History of the party</Link> */}
                         </div>
                         {/* LINKS */}
                     </div>
@@ -53,7 +53,7 @@ function Footer() {
                             <Link href="/anandraoji">Sri Anandrao Adsul ji </Link>
                             <Link href="/shrikantji">Sri Shrikant Shinde  ji </Link>
                             <Link href="/abhijeetji">Sri CAPT. Abhijit Adsul ji </Link>
-                            </div>
+                        </div>
                         {/* LINKS */}
                     </div>
 

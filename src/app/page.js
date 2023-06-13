@@ -48,7 +48,7 @@ export default function Home() {
 
       <div className=' relative mt-4 md:mt-12   w-[100%] h-[850px] '>
         <Link href="/eknath" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] z-10 '>View Story</Link>
-        <Image src="/eknathNew.jpg" fill={true} alt='eknath' />
+        <Image src="/eknathNew2.jpg" fill={true} alt='eknath' />
       </div>
 
       <div className=' relative mt-4 md:mt-12 w-[100%] h-[850px]  '>
@@ -62,18 +62,20 @@ export default function Home() {
       </div>
 
 
+      <div className=' relative mt-4 md:mt-12 w-[100%] h-[850px]  '>
+        <Link href="/shrikant" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] z-10'>View Story</Link>
+        <Image src="/shrikantNew1.jpg" fill={true} alt='shrikant' />
+      </div>
+
+
 
       <div className=' relative mt-4 md:mt-12 w-[100%] h-[850px] '>
         <Link href="/abhijeetji" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] z-10 '>View Story</Link>
-        <Image src="/abhijitNew.jpg" fill={true} alt='shrikant' />
+        <Image src="/abhijeetNew1.jpg" fill={true} alt='shrikant' />
       </div>
 
 
-      <div className=' relative mt-4 md:mt-12 w-[100%] h-[850px]  '>
-        <Link href="/shrikant" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] z-10'>View Story</Link>
-        <Image src="/shrikantNew.jpg" fill={true} alt='shrikant' />
-      </div>
-
+ 
     
       {/* IMAGE CARD */}
       <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 p-10 w-full gap-y-8  mt-16'>

@@ -9,7 +9,7 @@ function Page() {
       <Navbar />
       <Story title="Shrikant Shinde ji" text="Shrikant Eknath Shinde ji is a member of the 17th Lok Sabah of India. He represents the Kalyan constituency of Maharashtra and is a member of the Shiv Sena political party.
 
-He is the son of Eknath Shinde ji the Cabinet Minister of Public Works (MSRDC, Public Undertaking) in the Government of Maharashtra. At the time of his 2014 election win, he was a final-year Master's student of orthopedics." img={"/shrikantji.jpg"} />
+He is the son of Eknath Shinde ji the Cabinet Minister of Public Works (MSRDC, Public Undertaking) in the Government of Maharashtra. At the time of his 2014 election win, he was a final-year Master's student of orthopedics." img={"/shrikantNew1.jpg"} />
 
       <div className=' md:mt-2 lg:-mt-16 mx-10 mb-10 md:mx-16 md:px-3 '>
         <p className=' text-xl font-normal'>Shrikant Shinde ji Birth, Education, and Family</p>

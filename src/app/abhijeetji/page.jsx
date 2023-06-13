@@ -12,7 +12,7 @@ function Page() {
 
       Adsul completed his primary and secondary education in Amravati District, excelling in various subjects. His passion for knowledge and thirst for intellectual growth led him to pursue higher education. He obtained a Bachelor's degree in Political Science from a renowned institution, where he further honed his analytical and critical thinking skills.
 
-" img={"/abhijitNew.jpg"} />
+" img={"/abhijeetNew1.jpg"} />
 
 
       <div className=' md:mt-2 lg:-mt-16 mx-10 mb-10 md:mx-16 md:px-3 '>

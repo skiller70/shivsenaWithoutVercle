@@ -79,7 +79,7 @@ export default function Home() {
       <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 p-10 w-full gap-y-8  mt-16'>
         <CardImg img="img1.jpeg" alt="img1" />
         <CardImg img="img2.jpg" alt="img2" />
-        <CardImg img="Img3.jpeg" alt="img3" />
+        <CardImg img="Img3New.jpeg" alt="img3" />
       </div>
 
       {/* IMAGE CARD */}

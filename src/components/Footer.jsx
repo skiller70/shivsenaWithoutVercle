@@ -73,15 +73,15 @@ function Footer() {
                         {/* LINKS */}
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
 
-                            <Link href="/balasaheb">Anshumman Joshi Ji</Link>
-                            <Link href="/home">Colonel Devinder Sehrawat Ji</Link>
-                            <Link href="/ananddighe">Madan Rukhar Ji</Link>
-                            <Link href="/ananddighe">Adv. Praveen Arya Ji </Link>
-                            <Link href="/suraj">Mahant Suraj Giri Ji </Link>
-                            <Link href="/ananddighe">Dr Sukrit Sharma Ji</Link>
-                            <Link href="/ananddighe">Shieva Munjal Ji</Link>
-                            <Link href="/ananddighe">Rajinder Soni Ji</Link>
-                            <Link href="/ananddighe">Dev ji </Link>
+                            <Link href="/anshumman">Anshumman Joshi Ji</Link>
+                            <Link href="/">Colonel Devinder Sehrawat Ji</Link>
+                            <Link href="/">Madan Rukhar Ji</Link>
+                            <Link href="/">Adv. Praveen Arya Ji </Link>
+                            <Link href="/">Mahant Suraj Giri Ji </Link>
+                            <Link href="/">Dr Sukrit Sharma Ji</Link>
+                            <Link href="/">Shieva Munjal Ji</Link>
+                            <Link href="/">Rajinder Soni Ji</Link>
+                            <Link href="/">Dev ji </Link>
                             {/* <p className=' font-semibold'>Life and history of our leaders</p> */}
 
                         </div>

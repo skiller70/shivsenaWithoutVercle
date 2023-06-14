@@ -11,8 +11,8 @@ function Footer() {
             {/* FOOTER LOGO     */}
             <div className='flex items-center md:flex-row flex-col'>
                 <div className='flex items-center pt-16 md:py-16 md:px-4 lg:p-8'>
-                    <Image src="/shivShenaLogo.png" alt='logo' width={150} height={150} />
-                    <h1 className='text-3xl  font-semibold md:mx-2 lg:mx-8 text-white'> Shivsena</h1>
+                    <Image src="/shivShenaLogo.png" alt='logo' width={190} height={190} />
+                    {/* <h1 className='text-3xl  font-semibold md:mx-2 lg:mx-8 text-white'> Shivsena</h1> */}
                 </div>
 
                 {/* NAV LINKS */}
@@ -29,7 +29,7 @@ function Footer() {
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
                             <Link className='' href="/historyofshivsena">History of shivsena</Link>
                             <Link href="/ourideology">Our Ideology</Link>
-                           
+
                             {/* <Link href="/historyofparty">History of the party</Link> */}
                         </div>
                         {/* LINKS */}
@@ -53,11 +53,48 @@ function Footer() {
                             <Link href="/anandrao">Sri Anandrao Adsul ji </Link>
                             <Link href="/shrikant">Sri Shrikant Shinde  ji </Link>
                             <Link href="/abhijeetji">Sri CAPT. Abhijit Adsul ji </Link>
+                            <Link href="/rahulji">Shewale Rahul Ramesh ji </Link>
+                       
                         </div>
                         {/* LINKS */}
                     </div>
 
                     {/* ************************************************************************* */}
+
+
+
+
+                    {/* ************************************************************************* */}
+                    <div>
+                        {/* TITLE */}
+                        <h1 className=' font-semibold'>State Leadership</h1>
+                        {/* TITLE */}
+                        {/* LINKS */}
+                        <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
+
+                            <Link href="/balasaheb">Anshumman Joshi Ji</Link>
+                            <Link href="/balasaheb">Colonel Devinder Sehrawat Ji</Link>
+                            <Link href="/ananddighe">Madan Rukhar Ji</Link>
+                            <Link href="/ananddighe">Adv. Praveen Arya Ji </Link>
+                            <Link href="/ananddighe">Mahant Suraj Giri Ji </Link>  
+                            <Link href="/ananddighe">Dr Sukrit Sharma Ji</Link>    
+                            <Link href="/ananddighe">Shieva Munjal Ji</Link>  
+                            <Link href="/ananddighe">Rajinder Soni Ji</Link> 
+                            <Link href="/ananddighe">Dev ji </Link>   
+                            {/* <p className=' font-semibold'>Life and history of our leaders</p> */}
+
+                        </div>
+                        {/* LINKS */}
+                    </div>
+
+                    {/* ************************************************************************* */}
+
+
+
+
+
+
+
 
 
 
@@ -89,7 +126,7 @@ function Footer() {
                         {/* TITLE */}
                         {/* LINKS */}
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
-                        <Link href="/constitution">Constitution </Link>
+                            <Link href="/constitution">Constitution </Link>
                             {/* <Link href="/">First Link</Link>
                             
                         <Link href="/">Second Link</Link>

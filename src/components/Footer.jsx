@@ -29,7 +29,7 @@ function Footer() {
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
                             <Link className='' href="/historyofshivsena">History of shivsena</Link>
                             <Link href="/ourideology">Our Ideology</Link>
-                            <Link href="/constitution">Constitution </Link>
+                           
                             {/* <Link href="/historyofparty">History of the party</Link> */}
                         </div>
                         {/* LINKS */}
@@ -48,7 +48,7 @@ function Footer() {
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
                             <Link href="/balasaheb">Balashaheb Thackeray  ji</Link>
                             <Link href="/ananddighe">Anand Dighe ji</Link>
-                            <p className=' font-semibold'>Life and history of our leaders</p>
+                            {/* <p className=' font-semibold'>Life and history of our leaders</p> */}
                             <Link href="/eknath">Sri Eknath Shinde ji </Link>
                             <Link href="/anandrao">Sri Anandrao Adsul ji </Link>
                             <Link href="/shrikant">Sri Shrikant Shinde  ji </Link>
@@ -89,7 +89,9 @@ function Footer() {
                         {/* TITLE */}
                         {/* LINKS */}
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
+                        <Link href="/constitution">Constitution </Link>
                             {/* <Link href="/">First Link</Link>
+                            
                         <Link href="/">Second Link</Link>
                         <Link href="/">Third Link</Link>
                         <Link href="/">Forth Link</Link> */}

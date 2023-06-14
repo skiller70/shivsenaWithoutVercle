@@ -15,7 +15,7 @@ function Navbar(props) {
     const userLogout = () => {
         localStorage.removeItem("token")
         router.push("/login")
-    }    
+    }
 
 
     // METHODS 
@@ -53,7 +53,7 @@ function Navbar(props) {
 
                     </div> : <div className='mx-[4%]lg:mx-[8%] flex gap-x-2 lg:gap-x-8 flex-1 w-full justify-center'  >
                         <Link className=' hover:border-b-4  ' href="/">Home</Link>
-                        <Link className=' hover:border-b-4  ' href="/ourmembers">Our Members</Link>
+                        <Link className=' hover:border-b-4  ' href="/ourmembers">Our M.Ps</Link>
                         <Link className=' hover:border-b-4  ' href="/medialist">Media</Link>
                         <Link className=' hover:border-b-4  ' href="/statewebsites">State Websites</Link>
                         <Link className=' hover:border-b-4  ' href="/contactus">Contact us</Link>

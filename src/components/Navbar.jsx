@@ -98,11 +98,12 @@ function Navbar(props) {
 
                     </div>
                         : <div className=' flex  justify-center flex-col  mx-32 gap-y-4'  >
-                            <Link className='  ' href="/">Home</Link>
-                            <Link className='  ' href="/ourstory">Our Story</Link>
-                            <Link className='  ' href="/medialist">Media</Link>
-                            <Link className='  ' href="/contactus">Contact us</Link>
-                            <Link className='  ' href="/statewebsites">State Websites</Link>
+                         
+                        <Link href="/">Home</Link>
+                        <Link  href="/ourmembers">Our M.Ps</Link>
+                        <Link  href="/medialist">Media</Link>
+                        <Link  href="/statewebsites">State Websites</Link>
+                        <Link  href="/contactus">Contact us</Link>
                         </div>
                     }
 

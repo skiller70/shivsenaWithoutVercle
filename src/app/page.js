@@ -41,35 +41,35 @@ export default function Home() {
         </div> */}
 
 
-      <div className=' relative mt-4 md:mt-12  w-[100%] h-[800px]  '>
+      <div className=' relative mt-4 md:mt-12  w-[100%]  h-[250px] md:h-[800px]  '>
         <Link href="/ananddighe" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] z-10 '>View Story</Link>
-        <Image src="/anandDigheNew.jpg" fill={true} alt='ananddighe' />
+        <Image className=' ' src="/anandDigheNew.jpg" fill={true} alt='ananddighe' />
       </div>
 
-      <div className=' relative mt-4 md:mt-12   w-[100%] h-[850px] '>
+      <div className=' relative mt-4 md:mt-12   w-[100%] h-[250px] md:h-[800px]'>
         <Link href="/eknath" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] z-10 '>View Story</Link>
         <Image src="/eknathNew2.jpg" fill={true} alt='eknath' />
       </div>
 
-      <div className=' relative mt-4 md:mt-12 w-[100%] h-[850px]  '>
+      <div className=' relative mt-4 md:mt-12 w-[100%] h-[250px] md:h-[800px]  '>
         <Link href="/anandrao" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] z-10'>View Story</Link>
         <Image src="/anandRaoNew.jpg" fill={true} alt='anandrao' />
       </div>
 
-      <div className=' relative mt-4 md:mt-12 w-[100%] h-[850px]  '>
+      <div className=' relative mt-4 md:mt-12 w-[100%] h-[250px] md:h-[800px]  '>
         <Link href="/rahulji" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] z-10'>View Story</Link>
         <Image src="/rahulNew.jpg" fill={true} alt='shrikant' />
       </div>
 
 
-      <div className=' relative mt-4 md:mt-12 w-[100%] h-[850px]  '>
+      <div className=' relative mt-4 md:mt-12 w-[100%] h-[250px] md:h-[800px]  '>
         <Link href="/shrikant" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] z-10'>View Story</Link>
         <Image src="/shrikantNew1.jpg" fill={true} alt='shrikant' />
       </div>
 
 
 
-      <div className=' relative mt-4 md:mt-12 w-[100%] h-[850px] '>
+      <div className=' relative mt-4 md:mt-12 w-[100%] h-[250px] md:h-[800px] '>
         <Link href="/abhijeetji" className='absolute bg-[#ffa500] text-white px-4 py-2 rounded-md bottom-[7%] right-[10%] z-10 '>View Story</Link>
         <Image src="/abhijeetNew1.jpg" fill={true} alt='shrikant' />
       </div>

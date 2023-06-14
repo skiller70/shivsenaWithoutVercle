@@ -29,6 +29,7 @@ function Footer() {
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
                             <Link className='' href="/historyofshivsena">History of shivsena</Link>
                             <Link href="/ourideology">Our Ideology</Link>
+                            <Link href="/ministers" className='font-semibold text-left'>Our Ministers in <br /> Maharashtra Government</Link>
 
                             {/* <Link href="/historyofparty">History of the party</Link> */}
                         </div>
@@ -54,7 +55,7 @@ function Footer() {
                             <Link href="/shrikant">Sri Shrikant Shinde  ji </Link>
                             <Link href="/abhijeetji">Sri CAPT. Abhijit Adsul ji </Link>
                             <Link href="/rahulji">Shewale Rahul Ramesh ji </Link>
-                       
+
                         </div>
                         {/* LINKS */}
                     </div>
@@ -73,14 +74,14 @@ function Footer() {
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
 
                             <Link href="/balasaheb">Anshumman Joshi Ji</Link>
-                            <Link href="/balasaheb">Colonel Devinder Sehrawat Ji</Link>
+                            <Link href="/home">Colonel Devinder Sehrawat Ji</Link>
                             <Link href="/ananddighe">Madan Rukhar Ji</Link>
                             <Link href="/ananddighe">Adv. Praveen Arya Ji </Link>
-                            <Link href="/ananddighe">Mahant Suraj Giri Ji </Link>  
-                            <Link href="/ananddighe">Dr Sukrit Sharma Ji</Link>    
-                            <Link href="/ananddighe">Shieva Munjal Ji</Link>  
-                            <Link href="/ananddighe">Rajinder Soni Ji</Link> 
-                            <Link href="/ananddighe">Dev ji </Link>   
+                            <Link href="/suraj">Mahant Suraj Giri Ji </Link>
+                            <Link href="/ananddighe">Dr Sukrit Sharma Ji</Link>
+                            <Link href="/ananddighe">Shieva Munjal Ji</Link>
+                            <Link href="/ananddighe">Rajinder Soni Ji</Link>
+                            <Link href="/ananddighe">Dev ji </Link>
                             {/* <p className=' font-semibold'>Life and history of our leaders</p> */}
 
                         </div>

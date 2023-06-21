@@ -7,7 +7,7 @@ function Page() {
   return (
     <div className=" ">
       <Navbar />
-      <Image src={"/oldBalasaheb.jpeg"} width={1920} height={800} alt="oldbala" />
+      <img src={"/oldBalasaheb.jpeg"} width={1920} height={800} alt="oldbala" />
 
     
 

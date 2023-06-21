@@ -17,7 +17,7 @@ function AnandRao() {
             {/* TEXT    */}
             {/* IMAGE */}
             <div className='md:w-[50%] mt-8 md:mt-0 flex justify-center items-center'>
-            <Image src="/anandrao.jpg" width={500} height={400} alt='anandrao'  />
+            <img src="/anandrao.jpg" width={500} height={400} alt='anandrao'  />
             </div>
             {/* IMAGE */}
 

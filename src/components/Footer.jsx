@@ -11,7 +11,7 @@ function Footer() {
             {/* FOOTER LOGO     */}
             <div className='flex items-center md:flex-row flex-col'>
                 <div className='flex items-center pt-16 md:py-16 md:px-4 lg:p-8'>
-                    <Image src="/shivShenaLogo.png" alt='logo' width={190} height={190} />
+                    <img src="/shivShenaLogo.png" alt='logo' width={190} height={190} />
                     {/* <h1 className='text-3xl  font-semibold md:mx-2 lg:mx-8 text-white'> Shivsena</h1> */}
                 </div>
 
@@ -29,6 +29,7 @@ function Footer() {
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
                             <Link className='' href="/historyofshivsena">History of shivsena</Link>
                             <Link href="/ourideology">Our Ideology</Link>
+                            <Link href="/mlas">Our Mla</Link>
                             <Link href="/ministers" className='font-semibold text-left'>Our Ministers in <br /> Maharashtra Government</Link>
 
                             {/* <Link href="/historyofparty">History of the party</Link> */}

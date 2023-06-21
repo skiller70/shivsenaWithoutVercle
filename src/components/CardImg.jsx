@@ -5,7 +5,7 @@ function CardImg(props) {
     return (
         <div>
             <div className="max-w-sm rounded overflow-hidden shadow-lg ">
-                <Image className="w-full " src={`/${props.img}`} alt={props.alt} width={400} height={600}/>
+                <img className="w-full " src={`/${props.img}`} alt={props.alt} width={400} height={600}/>
                 {/* <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">{props.title}</div>
                     <p className="text-gray-700 text-base">

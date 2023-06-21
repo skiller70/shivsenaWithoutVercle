@@ -11,7 +11,7 @@ function page() {
             <div className='my-16'>
 
                 <h1 className=' text-center my-16 text-2xl '>Chief Minister</h1>
-                <div className=' flex justify-center mx-[35%]'>
+                <div className=' flex justify-center mx-6 md:mx-[35%]'>
 
                     <MinistersCard title="Eknath Sambhaji Shinde" text="Eknath Sambhaji Shinde is an Indian politician who is serving as the 20th and Current Chief Minister of Maharashtra since 30 June 2022. He is also serving as the Leader of Shiv Sena since February 2023 and the Leader of the House, Maharashtra Legislative Assembly since July 2022." img={"/eknathM.jpg"} />
                 </div>

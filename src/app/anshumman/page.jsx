@@ -17,8 +17,8 @@ function page() {
             <div className=' flex justify-between gap-y-6 md:gap-y-0 flex-col md:flex-row mx-20 mt-10'>
 
 
-                <Image src={"/sankatMochan.jpg"} width={500} height={250} alt="hanumanji" />
-                <Image src={"/anshumman.jpg"} width={500} height={250} alt="anshumman" />
+                <img src={"/sankatMochan.jpg"} width={500} height={250} alt="hanumanji" />
+                <img src={"/anshumman.jpg"} width={500} height={250} alt="anshumman" />
             </div>
 
             <p className=' text-center   lg:mx-20 text-3xl mt-8 font-semibold'>Anshumman Joshi Ji</p>

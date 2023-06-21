@@ -10,7 +10,7 @@ function Abhijit() {
 
 
           <div className=' md:w-[40%] mt-16 md:mt-0'>
-          <Image src="/Abhijit.jpeg" width={450} height={600} alt='abhijit'/>
+          <img src="/Abhijit.jpeg" width={450} height={600} alt='abhijit'/>
           </div>
             {/* IMAGE */}
 

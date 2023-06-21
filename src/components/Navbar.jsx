@@ -38,7 +38,7 @@ function Navbar(props) {
                             <FontAwesomeIcon onClick={() => { setToggle(!toggle) }} icon={faBars} color='white' />}
                     </div>
                     <Link href="/" className='flex  flex-1 justify-center md:justify-start items-center cursor-pointer'>
-                        <Image src="/shivShenaLogo.png" alt='logo' width={80} height={80} />
+                        <img src="/shivShenaLogo.png" alt='logo' width={80} height={80} />
                         <div className=' text-white text-2xl mx-2 lg:mx-8  font-semibold' >Shivsena</div>
                     </Link>
 
@@ -55,7 +55,7 @@ function Navbar(props) {
                         <Link className=' hover:border-b-4  ' href="/">Home</Link>
                         <Link className=' hover:border-b-4  ' href="/ourmembers">Our M.Ps</Link>
                         <Link className=' hover:border-b-4  ' href="/medialist">Media</Link>
-                        <Link className=' hover:border-b-4  ' href="/statewebsites">State Websites</Link>
+                        {/* <Link className=' hover:border-b-4  ' href="/statewebsites">State Websites</Link> */}
                         <Link className=' hover:border-b-4  ' href="/contactus">Contact us</Link>
 
                     </div>}
@@ -102,7 +102,7 @@ function Navbar(props) {
                         <Link href="/">Home</Link>
                         <Link  href="/ourmembers">Our M.Ps</Link>
                         <Link  href="/medialist">Media</Link>
-                        <Link  href="/statewebsites">State Websites</Link>
+                        {/* <Link  href="/statewebsites">State Websites</Link> */}
                         <Link  href="/contactus">Contact us</Link>
                         </div>
                     }
@@ -113,7 +113,7 @@ function Navbar(props) {
                         {/* <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/">Make a Donation</Link> */}
                     </div> : <div className='flex items-center flex-row gap-x-4 mt-8  justify-center' >
 
-                        <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/contact">Join Shivsena</Link>
+                        <Link className=' bg-[#ffa500] px-4 py-1 hover:scale-110 rounded-md shadow-md' href="/joinshivsena">Join Shivsena</Link>
                         <Link className=' bg-[#daa520] px-4 py-1 hover:scale-110  rounded-md shadow-md' href="/donation">Make a Donation</Link>
                     </div>}
                 </div>

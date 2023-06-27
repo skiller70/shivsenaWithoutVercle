@@ -75,7 +75,7 @@ function Footer() {
                         <div className='flex-col flex gap-y-4 md:gap-y-2  mt-4 md:mt-2'>
 
                             <Link href="/anshumman">Anshumman Joshi Ji</Link>
-                            <Link href="/">Colonel Devinder Sehrawat Ji</Link>
+                            <Link href="/devinder">Colonel Devinder Sehrawat Ji</Link>
                             <Link href="/">Madan Rukhar Ji</Link>
                             <Link href="/">Adv. Praveen Arya Ji </Link>
                             <Link href="/">Mahant Suraj Giri Ji </Link>

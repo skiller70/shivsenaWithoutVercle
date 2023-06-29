@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faInstagram,faFacebook,faTwitter} from "@fortawesome/free-brands-svg-icons"
 
 function Footer() {
     return (
@@ -94,14 +96,12 @@ function Footer() {
 
 
 
-
-
-
-
-
+                    <div className='flex flex-col'>
+                    <div className=' md:flex-row flex-col flex gap-x-4'>
+                        
 
                     {/* ************************************************************************* */}
-                    <div>
+                    <div    >
                         {/* TITLE */}
                         <h1 className=' font-semibold'>Media Resource</h1>
                         {/* TITLE */}
@@ -139,6 +139,23 @@ function Footer() {
                     </div>
 
                     {/* ************************************************************************* */}
+                    </div>
+
+
+                            <div className=' text-2xl flex gap-4 py-4'>
+                               <a href="https://www.instagram.com/shivsena_delhi/"> <FontAwesomeIcon icon={faInstagram}/></a>
+                                <a href="https://www.facebook.com/ShivsendelhiOffical"><FontAwesomeIcon icon={faFacebook}/></a>
+                                <a href="https://twitter.com/shivsena_delhi"><FontAwesomeIcon icon={faTwitter}/></a>
+                            </div>
+
+
+
+                    </div>
+
+
+
+
+
 
 
 

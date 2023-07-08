@@ -10,27 +10,29 @@ function page() {
 
 
 
-            <Story title="Colonel Devinder Sehrawat Ji" text="Rahul Shewale is an active Indian politician from the Shiv Sena and the Lok Sabha member from the Mumbai South Central constituency. He defeated sitting MP Eknath Gaikwad in the Indian general election, 2014. Shewale is a four-time chairman of the standing committee of the Brihanmumbai Municipal Corporation (BMC), the municipal corporation of the city of Mumbai. He held the position from 2010 to 2014." img={"/devinder.jpeg"} />
+            <Story title="Colonel Devinder Sehrawat Ji" text="Colonel Devinder Sehrawat Ji is an Indian politician and former member of the Sixth Legislative Assembly of Delhi of India He has represented the Bijwasan constituency of New Delhi (being a member of The AAM AADMI PARTY before defecting to BJP political party.
+Early life and education
+Colonel Devinder Sehrawat Ji was born in Delhi. His father's name is Ram Prakash Sehrawat. He attended the University of Madras and Jawaharlal Nehru University and attained Master of Science and Bachelor of Science degrees. Sehrawat served in the Indian Army and retired from the rank of colonel." img={"/devinder.jpeg"} />
 
 
 
             <div className=' md:mt-2 lg:-mt-16 mx-10 mb-10 md:mx-16 md:px-3 '>
-                <p className=' text-xl font-normal'>Early & Personal Life</p>
+                <br />
+                <p className=' text-xl font-normal'>Political career</p>
                 <br />
                 <p className='  text-justify'>
-                    Rahul Shewale was born on 14 April 1973 to Ramesh Sambhaji Shewale, an Indian Navy officer and Jayashri Shewale, an employee of MTNL. His elder brother Avinash is a software engineer, who has settled in the United States, while his brother Navin is a doctor. He married fellow Shiv Sena politician and BMC corporator Kamini Mayekar (Kamini Shewale) on 14 February 2005. Kamini Shewale is a housewife. The couple have two sons: Swayam and Vedant.
-                    Shewale is a Diploma holder in Civil Engineering from Government Polytechnic, Bandra
+                Colonel Devinder Sehrawat Ji has been a MLA for one term. He represented the Bijwasan constituency and was a member of the Aam Aadmi Party political party.
 
                 </p>
                 <br />
-                <p className='text-xl font-normal'>Career</p>
+                {/* <p className='text-xl font-normal'>Career</p>
 
                 <br />
                 <p className='text-justify'>
                     Rahul Shewale is a two time MP. He holds the record for being elected the Chairman of the standing committee of the BMC most times. Mr. Shewale joined Shiv Sena officially in 2014 when he decided to contest the elections. Rahul Shewale has raised issues in Parliament concerning the renaming of Kings Circle Station in Mumbai and Construction of a B.R Ambedkar Statue at Indu Mill in Mumbai.
 
                     Rahul Shewale is the first Shiv Sena MP in India and first MP in Maharashtra to get an ISO certification (ISO 9001) for efficient and digital handling of grievance redressal was recently awarded with the ‘Best Parliamentarian’ title. He presented several issues in the Parliament related to infrastructure and environmental concerns.
-                </p>
+                </p> */}
 
             </div>
 
